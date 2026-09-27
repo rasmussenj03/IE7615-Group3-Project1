@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project 1: model checkpoints are large and fully reproducible from the notebooks
+checkpoints/
+*.pt
+*.pth
