@@ -25,7 +25,6 @@ Pipeline
                         a soft oval blend.
 4. ``to_yolo``        - convert pixel boxes to YOLO label lines;
    ``write_label``    - save them as the image's .txt label file.
-5. (to be added)      - generate the full dataset for every split.
 
 Paths, class names and the split are imported from ``src/preprocessing.py``
 so Milestone 1 and Milestone 2 always agree.
@@ -63,7 +62,7 @@ HEAD_BAND = (0.2, 0.8)    # faces stay within this vertical band (fraction of he
 MAX_TRIES = 50            # attempts to find a non-overlapping spot for a face
 
 
-# --- Part A: create YOLO folders and data.yaml ---
+# --- Create YOLO folders and data.yaml ---
 def setup_folders():
     """Create the YOLO folder structure and data.yaml."""
     for kind in ("images", "labels"):
@@ -82,7 +81,7 @@ def setup_folders():
     print(f"Created YOLO folders and data.yaml in {DET_DIR}")
 
 
-# --- Part B: trim CelebA photos to the face ---
+# --- Trim CelebA photos to the face ---
 def load_face(path):
     """Open one CelebA photo and trim it to FACE_BOX."""
     img = Image.open(IMAGE_DIR / path).convert("RGB")
@@ -114,7 +113,7 @@ def preview_face_box(n_per_class=4):
     print(f"Saved {out_path}")
 
 
-# --- Part D: compose one synthetic image ---
+# --- Compose one synthetic image ---
 def oval_mask(size):
     """Oval paste mask with a soft edge: keeps the face, fades out the photo's corners."""
     w, h = size
@@ -190,7 +189,7 @@ def preview_composites(split="train", n=4, seed=0):
     print(f"Saved {out_path}")
 
 
-# --- Part E: convert pixel boxes to YOLO labels ---
+# --- Convert pixel boxes to YOLO labels ---
 def to_yolo(boxes):
     """Convert (label, x1, y1, x2, y2) pixel boxes to YOLO label lines.
 

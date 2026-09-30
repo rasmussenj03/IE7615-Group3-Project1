@@ -8,7 +8,7 @@ To use this repository, please download it and run the notebooks in Jupyter Note
 
 ## Milestone 2 — Detection Dataset Construction
 
-Milestone 2 builds the dataset for the detection half of the project. Since CelebA only provides single-face photos, we create synthetic "group photos" by pasting face crops of our four celebrities onto photos of empty rooms. Each face gets a YOLO-format bounding box, and the finished dataset is used to fine-tune YOLOv8 in Milestone 3.
+Milestone 2 builds the dataset for the detection half of the project. Since CelebA only provides single-face photos, we create synthetic "group photos" by pasting face crops of our four celebrities onto photos of empty rooms. Each face gets a YOLO-format bounding box, and the finished dataset is used to fine-tune YOLOv8 in Milestone 3. The full pipeline is in `milestone2/Data_Preparation.ipynb`.
 
 **Faces.** Each CelebA photo is trimmed to the face region before pasting, so every bounding box fits the face tightly. Faces are drawn only from the matching Milestone 1 split, so no face appears in more than one of train, validation, and test.
 
@@ -22,6 +22,10 @@ Milestone 2 builds the dataset for the detection half of the project. Since Cele
 - Each face is resized to a random height between 90 and 220 pixels, and its brightness varies between 0.7× and 1.3×.
 - Faces are placed at head height, within the middle 60% of the image, and never overlap.
 - Faces are pasted with a soft oval blend, so they sit naturally in the room instead of appearing as rectangular patches.
-- A fixed random seed makes the dataset fully reproducible.
-- Each face's box is saved in YOLO format (class ID, box center, width, height, normalized to 0–1) in a label file with the same name as the image.
+
+**Labels.** Each image has a label file with the same name, with one line per face in YOLO format (class ID, box center, width, height, normalized to 0–1). Class IDs match Milestone 1: 0 = id_2336, 1 = id_2970, 2 = id_4422, 3 = id_7007. Sample images are read back from disk with their boxes drawn from the label files to confirm the boxes are correct.
+
+**Dataset.** Located in `data/detection/` (YOLO config: `data/detection/data.yaml`), about 45 MB.
+
+The Train/Val/Test split is 60 / 20 / 20, matching Milestone 1, which kept 5 test photos per celebrity so per-class results are meaningful. Each split uses its own fixed random seed, so the dataset is fully reproducible.
 
