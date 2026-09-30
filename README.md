@@ -23,4 +23,5 @@ Milestone 2 builds the dataset for the detection half of the project. Since Cele
 - Faces are placed at head height, within the middle 60% of the image, and never overlap.
 - Faces are pasted with a soft oval blend, so they sit naturally in the room instead of appearing as rectangular patches.
 - A fixed random seed makes the dataset fully reproducible.
+- Each face's box is saved in YOLO format (class ID, box center, width, height, normalized to 0–1) in a label file with the same name as the image.
 
