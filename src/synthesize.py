@@ -23,7 +23,8 @@ Pipeline
                         from the same split, with random size, brightness and
                         position (at head height, no overlapping faces), using
                         a soft oval blend.
-4. (to be added)      - write the YOLO label file for that image.
+4. ``to_yolo``        - convert pixel boxes to YOLO label lines;
+   ``write_label``    - save them as the image's .txt label file.
 5. (to be added)      - generate the full dataset for every split.
 
 Paths, class names and the split are imported from ``src/preprocessing.py``
@@ -188,6 +189,27 @@ def preview_composites(split="train", n=4, seed=0):
     fig.savefig(out_path, dpi=120, bbox_inches="tight")
     print(f"Saved {out_path}")
 
+
+# --- Part E: convert pixel boxes to YOLO labels ---
+def to_yolo(boxes):
+    """Convert (label, x1, y1, x2, y2) pixel boxes to YOLO label lines.
+
+    YOLO format: class_id x_center y_center width height, all divided by the
+    image size so they fall between 0 and 1.
+    """
+    lines = []
+    for label, x1, y1, x2, y2 in boxes:
+        x_center = (x1 + x2) / 2 / IMG_SIZE
+        y_center = (y1 + y2) / 2 / IMG_SIZE
+        width = (x2 - x1) / IMG_SIZE
+        height = (y2 - y1) / IMG_SIZE
+        lines.append(f"{label} {x_center:.6f} {y_center:.6f} {width:.6f} {height:.6f}")
+    return lines
+
+
+def write_label(boxes, label_path):
+    """Write one YOLO label file (one line per face)."""
+    label_path.write_text("\n".join(to_yolo(boxes)) + "\n")
 
 # --- Run setup when called from the terminal ---
 if __name__ == "__main__":
