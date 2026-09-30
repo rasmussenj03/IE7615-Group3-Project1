@@ -221,3 +221,6 @@ __marimo__/
 checkpoints/
 *.pt
 *.pth
+
+# macOS system files
+.DS_Store
