@@ -18,4 +18,9 @@ Milestone 2 builds the dataset for the detection half of the project. Since Cele
 - Photos are resized to 640 × 640 and split 18 / 6 / 6 (train / val / test), so test images use rooms the model never saw in training.
 - Sources and licenses are listed in `data/backgrounds/SOURCES.md`.
 
-**Coming next:** composing the synthetic images, writing the YOLO labels, and generating the full dataset.
+**Composition.** Each synthetic image combines 2–4 different celebrities on one background, with the background and every face drawn from the same split. To make the images resemble real group photos:
+- Each face is resized to a random height between 90 and 220 pixels, and its brightness varies between 0.7× and 1.3×.
+- Faces are placed at head height, within the middle 60% of the image, and never overlap.
+- Faces are pasted with a soft oval blend, so they sit naturally in the room instead of appearing as rectangular patches.
+- A fixed random seed makes the dataset fully reproducible.
+
