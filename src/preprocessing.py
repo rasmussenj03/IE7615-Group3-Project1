@@ -1,6 +1,6 @@
 """Preprocessing pipeline for the CelebA celebrity subset (Milestone 1).
 
-The raw subset lives in ``images/<celeba_identity_id>/<celeba_file>.jpg``.
+The raw subset lives in ``data/celeba/<celeba_identity_id>/<celeba_file>.jpg``.
 Images are CelebA *aligned & cropped* faces (178 x 218 px, RGB JPEG).
 
 Pipeline
@@ -34,7 +34,7 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-IMAGE_DIR = PROJECT_ROOT / "images"
+IMAGE_DIR = PROJECT_ROOT / "data" / "celeba"
 SPLITS_CSV = PROJECT_ROOT / "data" / "splits.csv"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}

@@ -1,0 +1,8 @@
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: id_2336
+  1: id_2970
+  2: id_4422
+  3: id_7007
