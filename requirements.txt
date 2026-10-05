@@ -6,3 +6,4 @@ matplotlib
 pillow
 scikit-learn
 pyyaml
+albumentations>=2.0
