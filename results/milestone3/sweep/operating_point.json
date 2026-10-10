@@ -1,0 +1,9 @@
+{
+  "model": "results/milestone3/sweep/best_model.pt",
+  "training_run": "aug_light",
+  "imgsz": 640,
+  "conf": 0.8,
+  "nms_iou": 0.7,
+  "agnostic_nms": false,
+  "selected_on": "validation F1"
+}

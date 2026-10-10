@@ -221,6 +221,14 @@ __marimo__/
 checkpoints/
 *.pt
 *.pth
+# ...except the Milestone 3 checkpoint selected by the sweep (~6 MB), used by the gallery and the demo
+!results/milestone3/sweep/best_model.pt
 
 # macOS system files
 .DS_Store
+
+# Ultralytics label caches and the machine-specific copy of data.yaml written by the Milestone 3 notebooks
+data/detection/labels/*.cache
+results/milestone3/**/dataset_absolute.yaml
+# ...but keep the Milestone 3 training console logs
+!results/milestone3/sweep/runs/*/train.log
