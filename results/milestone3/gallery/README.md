@@ -4,7 +4,7 @@ Predictions of the fine-tuned YOLOv8n (`results/milestone3/sweep/best_model.pt`,
 
 On the whole test split (200 images, 543 faces) the model reaches precision 0.965, recall 0.919 and mean matched IoU 0.971 at this operating point.
 
-**Legend.** Solid box = prediction, in the colour of the predicted identity (id_2336 orange, id_2970 blue, id_4422 green, id_7007 pink), labelled with name and confidence. Red marks errors: `x` = wrong identity, `x dup` = duplicate, `x loc` = box overlaps the face with IoU < 0.5, `x bg` = box on background; a dashed red box is a labelled face that was missed (`MISSED`) or only boxed under another name (`true: <name>`).
+**Legend.** Solid box = prediction, in the color of the predicted identity (id_2336 orange, id_2970 blue, id_4422 green, id_7007 pink), labelled with name and confidence. Red marks errors: `x` = wrong identity, `x dup` = duplicate, `x loc` = box overlaps the face with IoU < 0.5, `x bg` = box on background; a dashed red box is a labelled face that was missed (`MISSED`) or only boxed under another name (`true: <name>`).
 
 ![contact sheet](contact_sheet.png)
 
@@ -12,7 +12,7 @@ On the whole test split (200 images, 543 faces) the model reaches precision 0.96
 |---|---|---|---|
 | 1 | Success: crowded scene | [`test_0066.jpg`](01_success_crowded_test_0066.jpg) | original scene, 4 labelled faces; 4 found correctly (confidence 0.98). All four identities in one room, each named correctly at 0.98: the typical result on original scenes. |
 | 2 | Success: crowded scene | [`test_0010.jpg`](02_success_crowded_test_0010.jpg) | original scene, 4 labelled faces; 4 found correctly (confidence 0.98-0.99). Three faces close together (without overlapping) still get tight, separate boxes. |
-| 3 | Success: augmented scene | [`test_aug_0051.jpg`](03_success_augmented_test_aug_0051.jpg) | augmented copy, 4 labelled faces; 4 found correctly (confidence 0.97). Grey-scale copy with a dropout hole on id_7007's face and id_2970 cut by the top-left border: identity is recognized without colour and with partial occlusion. |
+| 3 | Success: augmented scene | [`test_aug_0051.jpg`](03_success_augmented_test_aug_0051.jpg) | augmented copy, 4 labelled faces; 4 found correctly (confidence 0.97). Grey-scale copy with a dropout hole on id_7007's face and id_2970 cut by the top-left border: identity is recognized without color and with partial occlusion. |
 | 4 | Success: augmented scene | [`test_aug_0068.jpg`](04_success_augmented_test_aug_0068.jpg) | augmented copy, 4 labelled faces; 4 found correctly (confidence 0.96-0.98). Several dropout holes, and faces at the bottom-left and right borders, are all handled correctly. |
 | 5 | Success: small faces | [`test_0069.jpg`](05_success_small_test_0069.jpg) | original scene, 3 labelled faces; 3 found correctly (confidence 0.97-0.98). The smallest face in this selection (id_4422 on the right, about 90 px tall) is still found and named correctly. |
 | 6 | Failure: identity confusion | [`test_aug_0077.jpg`](06_fail_identity_test_aug_0077.jpg) | augmented copy, 3 labelled faces; 1 found correctly (id_2336, 0.98); **id_2970 predicted as id_4422** (0.92); **id_4422 predicted as id_2970** (0.89). The Milestone 1 look-alike pair (id_2970 / id_4422) swapped in both directions, with high confidence: the id_2970 face is cut by the left border and the id_4422 face has a dropout hole. Raising the threshold cannot fix confident confusions like these. |
