@@ -1,0 +1,1061 @@
+image,kind,index,identity,outcome,iou,confidence,box_height,true_identity
+test_0001.jpg,ground truth,0,id_2336,found,0.9741,,119.0003,
+test_0001.jpg,ground truth,1,id_7007,found,0.9825,,166.9997,
+test_0001.jpg,ground truth,2,id_2970,found,0.9887,,173.0003,
+test_0001.jpg,ground truth,3,id_4422,found,0.976,,110.0,
+test_0001.jpg,prediction,0,id_2336,TP,0.9741,0.9828,117.8874,id_2336
+test_0001.jpg,prediction,1,id_7007,TP,0.9825,0.982,166.608,id_7007
+test_0001.jpg,prediction,2,id_2970,TP,0.9887,0.9739,172.514,id_2970
+test_0001.jpg,prediction,3,id_4422,TP,0.976,0.9681,110.3702,id_4422
+test_0002.jpg,ground truth,0,id_4422,found,0.9513,,128.0,
+test_0002.jpg,ground truth,1,id_2970,found,0.9545,,178.0,
+test_0002.jpg,prediction,0,id_4422,TP,0.9513,0.9666,132.2325,id_4422
+test_0002.jpg,prediction,1,id_2970,TP,0.9545,0.9618,170.5651,id_2970
+test_0003.jpg,ground truth,0,id_2970,found,0.9894,,162.0,
+test_0003.jpg,ground truth,1,id_2336,found,0.9855,,118.0,
+test_0003.jpg,prediction,0,id_2336,TP,0.9855,0.9776,117.5371,id_2336
+test_0003.jpg,prediction,1,id_2970,TP,0.9894,0.969,161.6861,id_2970
+test_0004.jpg,ground truth,0,id_2336,found,0.9806,,211.0003,
+test_0004.jpg,ground truth,1,id_2970,found,0.9884,,90.9997,
+test_0004.jpg,prediction,0,id_2336,TP,0.9806,0.9757,208.7988,id_2336
+test_0004.jpg,prediction,1,id_2970,TP,0.9884,0.9735,90.7728,id_2970
+test_0005.jpg,ground truth,0,id_2336,found,0.9897,,139.0003,
+test_0005.jpg,ground truth,1,id_2970,found,0.9702,,156.9997,
+test_0005.jpg,prediction,0,id_2970,TP,0.9702,0.9783,153.153,id_2970
+test_0005.jpg,prediction,1,id_2336,TP,0.9897,0.9781,139.0534,id_2336
+test_0006.jpg,ground truth,0,id_4422,found,0.9879,,166.9997,
+test_0006.jpg,ground truth,1,id_2970,found,0.9901,,123.0003,
+test_0006.jpg,prediction,0,id_2970,TP,0.9901,0.9793,123.2946,id_2970
+test_0006.jpg,prediction,1,id_4422,TP,0.9879,0.9659,165.9362,id_4422
+test_0007.jpg,ground truth,0,id_7007,found,0.9693,,124.0,
+test_0007.jpg,ground truth,1,id_4422,found,0.9865,,149.0003,
+test_0007.jpg,ground truth,2,id_2970,found,0.981,,195.0003,
+test_0007.jpg,prediction,0,id_7007,TP,0.9693,0.9727,121.4669,id_7007
+test_0007.jpg,prediction,1,id_2970,TP,0.981,0.972,192.6633,id_2970
+test_0007.jpg,prediction,2,id_4422,TP,0.9865,0.969,147.2897,id_4422
+test_0008.jpg,ground truth,0,id_2336,found,0.9814,,90.9997,
+test_0008.jpg,ground truth,1,id_2970,found,0.9879,,218.9997,
+test_0008.jpg,ground truth,2,id_4422,found,0.9911,,126.9997,
+test_0008.jpg,prediction,0,id_4422,TP,0.9911,0.9757,127.3101,id_4422
+test_0008.jpg,prediction,1,id_2336,TP,0.9814,0.9725,91.9899,id_2336
+test_0008.jpg,prediction,2,id_2970,TP,0.9879,0.9713,217.224,id_2970
+test_0009.jpg,ground truth,0,id_7007,found,0.9772,,168.0,
+test_0009.jpg,ground truth,1,id_4422,found,0.9773,,130.9997,
+test_0009.jpg,prediction,0,id_4422,TP,0.9773,0.977,129.965,id_4422
+test_0009.jpg,prediction,1,id_7007,TP,0.9772,0.9694,166.2504,id_7007
+test_0010.jpg,ground truth,0,id_4422,found,0.9953,,119.0003,
+test_0010.jpg,ground truth,1,id_7007,found,0.9875,,119.0003,
+test_0010.jpg,ground truth,2,id_2970,found,0.9885,,184.9997,
+test_0010.jpg,ground truth,3,id_2336,found,0.9899,,134.0,
+test_0010.jpg,prediction,0,id_2970,TP,0.9885,0.9864,183.9243,id_2970
+test_0010.jpg,prediction,1,id_2336,TP,0.9899,0.9836,134.4111,id_2336
+test_0010.jpg,prediction,2,id_4422,TP,0.9953,0.9795,118.8937,id_4422
+test_0010.jpg,prediction,3,id_7007,TP,0.9875,0.9787,118.2758,id_7007
+test_0011.jpg,ground truth,0,id_2970,found,0.9882,,146.9997,
+test_0011.jpg,ground truth,1,id_7007,found,0.9957,,159.0003,
+test_0011.jpg,ground truth,2,id_2336,found,0.9866,,148.0,
+test_0011.jpg,prediction,0,id_2336,TP,0.9866,0.9856,147.2018,id_2336
+test_0011.jpg,prediction,1,id_2970,TP,0.9882,0.975,147.2262,id_2970
+test_0011.jpg,prediction,2,id_7007,TP,0.9957,0.9749,159.4668,id_7007
+test_0012.jpg,ground truth,0,id_2970,found,0.9738,,90.9997,
+test_0012.jpg,ground truth,1,id_4422,found,0.9908,,176.9997,
+test_0012.jpg,ground truth,2,id_7007,found,0.9838,,133.0003,
+test_0012.jpg,ground truth,3,id_2336,found,0.9706,,120.0,
+test_0012.jpg,prediction,0,id_2970,TP,0.9738,0.9847,91.4709,id_2970
+test_0012.jpg,prediction,1,id_2336,TP,0.9706,0.9821,121.9345,id_2336
+test_0012.jpg,prediction,2,id_4422,TP,0.9908,0.9699,177.1454,id_4422
+test_0012.jpg,prediction,3,id_7007,TP,0.9838,0.902,134.1,id_7007
+test_0013.jpg,ground truth,0,id_2970,found,0.977,,103.0003,
+test_0013.jpg,ground truth,1,id_4422,found,0.9873,,176.0,
+test_0013.jpg,prediction,0,id_2970,TP,0.977,0.9798,103.495,id_2970
+test_0013.jpg,prediction,1,id_4422,TP,0.9873,0.9756,174.4868,id_4422
+test_0014.jpg,ground truth,0,id_4422,found,0.9911,,214.0,
+test_0014.jpg,ground truth,1,id_2970,found,0.9863,,113.0003,
+test_0014.jpg,prediction,0,id_2970,TP,0.9863,0.9824,114.0864,id_2970
+test_0014.jpg,prediction,1,id_4422,TP,0.9911,0.9745,213.3571,id_4422
+test_0015.jpg,ground truth,0,id_2970,found,0.9829,,124.0,
+test_0015.jpg,ground truth,1,id_2336,found,0.9937,,161.0003,
+test_0015.jpg,ground truth,2,id_7007,found,0.9908,,186.9997,
+test_0015.jpg,prediction,0,id_2336,TP,0.9937,0.9842,160.2309,id_2336
+test_0015.jpg,prediction,1,id_2970,TP,0.9829,0.9793,123.2562,id_2970
+test_0015.jpg,prediction,2,id_7007,TP,0.9908,0.9596,188.2571,id_7007
+test_0016.jpg,ground truth,0,id_4422,found,0.9431,,100.0,
+test_0016.jpg,ground truth,1,id_2970,found,0.9767,,161.0003,
+test_0016.jpg,ground truth,2,id_7007,found,0.9936,,144.0,
+test_0016.jpg,prediction,0,id_7007,TP,0.9936,0.9799,144.6345,id_7007
+test_0016.jpg,prediction,1,id_2970,TP,0.9767,0.9755,159.3091,id_2970
+test_0016.jpg,prediction,2,id_4422,TP,0.9431,0.9752,99.5123,id_4422
+test_0017.jpg,ground truth,0,id_2970,found,0.9956,,148.0,
+test_0017.jpg,ground truth,1,id_7007,found,0.9794,,112.0,
+test_0017.jpg,prediction,0,id_2970,TP,0.9956,0.9894,147.7754,id_2970
+test_0017.jpg,prediction,1,id_7007,TP,0.9794,0.9724,111.0031,id_7007
+test_0018.jpg,ground truth,0,id_2970,found,0.9811,,166.9997,
+test_0018.jpg,ground truth,1,id_4422,found,0.9972,,191.0003,
+test_0018.jpg,ground truth,2,id_2336,found,0.9873,,100.0,
+test_0018.jpg,ground truth,3,id_7007,missed,0.0,,178.9997,
+test_0018.jpg,prediction,0,id_2970,TP,0.9811,0.9814,164.1256,id_2970
+test_0018.jpg,prediction,1,id_2336,TP,0.9873,0.9783,100.8914,id_2336
+test_0018.jpg,prediction,2,id_4422,TP,0.9972,0.9781,191.2151,id_4422
+test_0019.jpg,ground truth,0,id_7007,found,0.9553,,156.0,
+test_0019.jpg,ground truth,1,id_2336,found,0.9726,,206.9997,
+test_0019.jpg,ground truth,2,id_2970,found,0.9893,,98.0,
+test_0019.jpg,ground truth,3,id_4422,found,0.9852,,162.0,
+test_0019.jpg,prediction,0,id_7007,TP,0.9553,0.9806,161.3973,id_7007
+test_0019.jpg,prediction,1,id_2970,TP,0.9893,0.9798,98.3626,id_2970
+test_0019.jpg,prediction,2,id_4422,TP,0.9852,0.974,164.1352,id_4422
+test_0019.jpg,prediction,3,id_2336,TP,0.9726,0.9684,208.5562,id_2336
+test_0020.jpg,ground truth,0,id_7007,found,0.9869,,208.9997,
+test_0020.jpg,ground truth,1,id_2336,found,0.9938,,139.0003,
+test_0020.jpg,prediction,0,id_2336,TP,0.9938,0.9842,138.946,id_2336
+test_0020.jpg,prediction,1,id_7007,TP,0.9869,0.9679,208.0307,id_7007
+test_0021.jpg,ground truth,0,id_4422,found,0.9796,,188.9997,
+test_0021.jpg,ground truth,1,id_7007,found,0.9497,,198.0,
+test_0021.jpg,prediction,0,id_7007,TP,0.9497,0.9705,204.244,id_7007
+test_0021.jpg,prediction,1,id_4422,TP,0.9796,0.9608,190.8845,id_4422
+test_0022.jpg,ground truth,0,id_4422,found,0.9752,,120.0,
+test_0022.jpg,ground truth,1,id_2336,found,0.978,,103.0003,
+test_0022.jpg,prediction,0,id_2336,TP,0.978,0.9817,101.9535,id_2336
+test_0022.jpg,prediction,1,id_4422,TP,0.9752,0.9673,118.2694,id_4422
+test_0023.jpg,ground truth,0,id_2336,found,0.9874,,92.0,
+test_0023.jpg,ground truth,1,id_7007,missed,0.0,,140.0,
+test_0023.jpg,ground truth,2,id_4422,found,0.9947,,150.0,
+test_0023.jpg,ground truth,3,id_2970,found,0.9901,,184.9997,
+test_0023.jpg,prediction,0,id_2970,TP,0.9901,0.9801,184.4716,id_2970
+test_0023.jpg,prediction,1,id_4422,TP,0.9947,0.9681,150.2009,id_4422
+test_0023.jpg,prediction,2,id_2336,TP,0.9874,0.9656,91.4255,id_2336
+test_0024.jpg,ground truth,0,id_2336,found,0.991,,159.0003,
+test_0024.jpg,ground truth,1,id_2970,found,0.9907,,203.0003,
+test_0024.jpg,ground truth,2,id_7007,found,0.9695,,133.0003,
+test_0024.jpg,ground truth,3,id_4422,found,0.987,,96.0,
+test_0024.jpg,prediction,0,id_2336,TP,0.991,0.9847,158.0245,id_2336
+test_0024.jpg,prediction,1,id_7007,TP,0.9695,0.9782,130.4206,id_7007
+test_0024.jpg,prediction,2,id_4422,TP,0.987,0.9696,95.9685,id_4422
+test_0024.jpg,prediction,3,id_2970,TP,0.9907,0.9626,202.5492,id_2970
+test_0025.jpg,ground truth,0,id_2336,found,0.9912,,112.0,
+test_0025.jpg,ground truth,1,id_2970,found,0.9932,,94.0,
+test_0025.jpg,ground truth,2,id_7007,found,0.9823,,120.9997,
+test_0025.jpg,ground truth,3,id_4422,found,0.9847,,163.0003,
+test_0025.jpg,prediction,0,id_2970,TP,0.9932,0.9871,94.1307,id_2970
+test_0025.jpg,prediction,1,id_4422,TP,0.9847,0.9832,162.3462,id_4422
+test_0025.jpg,prediction,2,id_7007,TP,0.9823,0.9763,120.8691,id_7007
+test_0025.jpg,prediction,3,id_2336,TP,0.9912,0.9348,112.1183,id_2336
+test_0026.jpg,ground truth,0,id_2336,found,0.99,,190.0,
+test_0026.jpg,ground truth,1,id_4422,found,0.9836,,99.0003,
+test_0026.jpg,prediction,0,id_4422,TP,0.9836,0.9733,99.4349,id_4422
+test_0026.jpg,prediction,1,id_2336,TP,0.99,0.9659,189.7535,id_2336
+test_0027.jpg,ground truth,0,id_4422,found,0.9722,,104.9997,
+test_0027.jpg,ground truth,1,id_2336,found,0.9964,,210.0,
+test_0027.jpg,ground truth,2,id_7007,missed,0.0,,110.9997,
+test_0027.jpg,prediction,0,id_2336,TP,0.9964,0.9794,209.7859,id_2336
+test_0027.jpg,prediction,1,id_4422,TP,0.9722,0.9437,104.6953,id_4422
+test_0028.jpg,ground truth,0,id_7007,found,0.9757,,188.9997,
+test_0028.jpg,ground truth,1,id_4422,found,0.9807,,194.0,
+test_0028.jpg,ground truth,2,id_2970,found,0.9858,,192.0,
+test_0028.jpg,prediction,0,id_4422,TP,0.9807,0.979,192.5387,id_4422
+test_0028.jpg,prediction,1,id_2970,TP,0.9858,0.9652,191.9446,id_2970
+test_0028.jpg,prediction,2,id_7007,TP,0.9757,0.9624,191.0905,id_7007
+test_0029.jpg,ground truth,0,id_7007,found,0.9798,,215.0003,
+test_0029.jpg,ground truth,1,id_2336,found,0.9835,,134.0,
+test_0029.jpg,ground truth,2,id_2970,found,0.9734,,108.0,
+test_0029.jpg,prediction,0,id_2336,TP,0.9835,0.987,136.1432,id_2336
+test_0029.jpg,prediction,1,id_2970,TP,0.9734,0.9843,107.6039,id_2970
+test_0029.jpg,prediction,2,id_7007,TP,0.9798,0.9806,215.6808,id_7007
+test_0030.jpg,ground truth,0,id_7007,found,0.9815,,104.9997,
+test_0030.jpg,ground truth,1,id_2970,found,0.961,,176.9997,
+test_0030.jpg,ground truth,2,id_2336,found,0.9813,,162.0,
+test_0030.jpg,ground truth,3,id_4422,found,0.9817,,164.9997,
+test_0030.jpg,prediction,0,id_4422,TP,0.9817,0.9872,166.056,id_4422
+test_0030.jpg,prediction,1,id_2336,TP,0.9813,0.9798,160.2964,id_2336
+test_0030.jpg,prediction,2,id_2970,TP,0.961,0.9729,171.7499,id_2970
+test_0030.jpg,prediction,3,id_7007,TP,0.9815,0.9289,103.6435,id_7007
+test_0031.jpg,ground truth,0,id_2970,found,0.9928,,146.9997,
+test_0031.jpg,ground truth,1,id_4422,found,0.9868,,218.0,
+test_0031.jpg,ground truth,2,id_2336,found,0.9849,,144.0,
+test_0031.jpg,ground truth,3,id_7007,found,0.9912,,108.0,
+test_0031.jpg,prediction,0,id_2336,TP,0.9849,0.9873,144.4791,id_2336
+test_0031.jpg,prediction,1,id_7007,TP,0.9912,0.9832,107.2756,id_7007
+test_0031.jpg,prediction,2,id_4422,TP,0.9868,0.9825,219.0917,id_4422
+test_0031.jpg,prediction,3,id_2970,TP,0.9928,0.9518,147.7239,id_2970
+test_0032.jpg,ground truth,0,id_2970,found,0.9672,,158.0,
+test_0032.jpg,ground truth,1,id_7007,found,0.9818,,176.0,
+test_0032.jpg,prediction,0,id_2970,TP,0.9672,0.9829,155.8221,id_2970
+test_0032.jpg,prediction,1,id_7007,TP,0.9818,0.9752,177.3723,id_7007
+test_0033.jpg,ground truth,0,id_2336,found,0.9734,,211.0003,
+test_0033.jpg,ground truth,1,id_7007,found,0.9939,,139.0003,
+test_0033.jpg,ground truth,2,id_4422,found,0.9901,,174.0,
+test_0033.jpg,ground truth,3,id_2970,found,0.9639,,156.9997,
+test_0033.jpg,prediction,0,id_7007,TP,0.9939,0.9896,139.4069,id_7007
+test_0033.jpg,prediction,1,id_4422,TP,0.9901,0.9795,172.7826,id_4422
+test_0033.jpg,prediction,2,id_2336,TP,0.9734,0.9764,215.9998,id_2336
+test_0033.jpg,prediction,3,id_2970,TP,0.9639,0.9646,158.425,id_2970
+test_0034.jpg,ground truth,0,id_2336,found,0.9886,,206.0,
+test_0034.jpg,ground truth,1,id_2970,found,0.9792,,164.0,
+test_0034.jpg,ground truth,2,id_4422,found,0.9921,,191.0003,
+test_0034.jpg,ground truth,3,id_7007,found,0.9838,,133.0003,
+test_0034.jpg,prediction,0,id_7007,TP,0.9838,0.9792,133.9555,id_7007
+test_0034.jpg,prediction,1,id_4422,TP,0.9921,0.9789,191.0243,id_4422
+test_0034.jpg,prediction,2,id_2970,TP,0.9792,0.9751,164.1302,id_2970
+test_0034.jpg,prediction,3,id_2336,TP,0.9886,0.9676,206.303,id_2336
+test_0035.jpg,ground truth,0,id_2970,found,0.9918,,211.0003,
+test_0035.jpg,ground truth,1,id_2336,found,0.994,,183.0003,
+test_0035.jpg,prediction,0,id_2970,TP,0.9918,0.9672,212.1362,id_2970
+test_0035.jpg,prediction,1,id_2336,TP,0.994,0.9653,183.2572,id_2336
+test_0036.jpg,ground truth,0,id_7007,found,0.9874,,136.9997,
+test_0036.jpg,ground truth,1,id_2970,found,0.9933,,115.0003,
+test_0036.jpg,ground truth,2,id_2336,found,0.9892,,196.0,
+test_0036.jpg,prediction,0,id_7007,TP,0.9874,0.989,137.1087,id_7007
+test_0036.jpg,prediction,1,id_2336,TP,0.9892,0.9779,195.4932,id_2336
+test_0036.jpg,prediction,2,id_2970,TP,0.9933,0.9775,114.788,id_2970
+test_0037.jpg,ground truth,0,id_2336,found,0.982,,104.9997,
+test_0037.jpg,ground truth,1,id_2970,found,0.9775,,100.9997,
+test_0037.jpg,prediction,0,id_2970,TP,0.9775,0.9839,100.0004,id_2970
+test_0037.jpg,prediction,1,id_2336,TP,0.982,0.9092,105.2803,id_2336
+test_0038.jpg,ground truth,0,id_2336,found,0.9848,,103.0003,
+test_0038.jpg,ground truth,1,id_7007,found,0.9812,,176.0,
+test_0038.jpg,ground truth,2,id_2970,found,0.9956,,114.0,
+test_0038.jpg,ground truth,3,id_4422,found,0.9375,,110.9997,
+test_0038.jpg,prediction,0,id_2970,TP,0.9956,0.9885,114.068,id_2970
+test_0038.jpg,prediction,1,id_2336,TP,0.9848,0.9747,103.7435,id_2336
+test_0038.jpg,prediction,2,id_4422,TP,0.9375,0.9623,113.1119,id_4422
+test_0038.jpg,prediction,3,id_7007,TP,0.9812,0.9594,176.5911,id_7007
+test_0039.jpg,ground truth,0,id_7007,found,0.9842,,171.0003,
+test_0039.jpg,ground truth,1,id_2970,found,0.9614,,208.9997,
+test_0039.jpg,ground truth,2,id_2336,found,0.9825,,120.0,
+test_0039.jpg,ground truth,3,id_4422,found,0.9923,,184.9997,
+test_0039.jpg,prediction,0,id_4422,TP,0.9923,0.9802,184.9335,id_4422
+test_0039.jpg,prediction,1,id_7007,TP,0.9842,0.9786,173.035,id_7007
+test_0039.jpg,prediction,2,id_2336,TP,0.9825,0.9738,119.5039,id_2336
+test_0039.jpg,prediction,3,id_2970,TP,0.9614,0.962,205.8964,id_2970
+test_0040.jpg,ground truth,0,id_4422,found,0.9934,,211.0003,
+test_0040.jpg,ground truth,1,id_7007,found,0.9783,,149.0003,
+test_0040.jpg,ground truth,2,id_2336,found,0.9829,,110.0,
+test_0040.jpg,ground truth,3,id_2970,found,0.9859,,216.0,
+test_0040.jpg,prediction,0,id_4422,TP,0.9934,0.9805,210.8949,id_4422
+test_0040.jpg,prediction,1,id_7007,TP,0.9783,0.9758,150.6421,id_7007
+test_0040.jpg,prediction,2,id_2336,TP,0.9829,0.9688,108.7653,id_2336
+test_0040.jpg,prediction,3,id_2970,TP,0.9859,0.9565,215.253,id_2970
+test_0041.jpg,ground truth,0,id_2970,found,0.9895,,153.0003,
+test_0041.jpg,ground truth,1,id_2336,found,0.9807,,170.0,
+test_0041.jpg,prediction,0,id_2970,TP,0.9895,0.9807,151.9566,id_2970
+test_0041.jpg,prediction,1,id_2336,TP,0.9807,0.9793,169.5408,id_2336
+test_0042.jpg,ground truth,0,id_4422,found,0.9876,,174.0,
+test_0042.jpg,ground truth,1,id_2336,found,0.9822,,181.0003,
+test_0042.jpg,ground truth,2,id_2970,found,0.9882,,191.0003,
+test_0042.jpg,prediction,0,id_2970,TP,0.9882,0.9777,189.649,id_2970
+test_0042.jpg,prediction,1,id_2336,TP,0.9822,0.9749,178.6689,id_2336
+test_0042.jpg,prediction,2,id_4422,TP,0.9876,0.9745,173.6238,id_4422
+test_0043.jpg,ground truth,0,id_4422,found,0.9851,,142.0,
+test_0043.jpg,ground truth,1,id_2336,found,0.9573,,204.0,
+test_0043.jpg,ground truth,2,id_2970,found,0.983,,204.0,
+test_0043.jpg,prediction,0,id_2336,TP,0.9573,0.9841,210.9918,id_2336
+test_0043.jpg,prediction,1,id_2970,TP,0.983,0.9795,201.6946,id_2970
+test_0043.jpg,prediction,2,id_4422,TP,0.9851,0.9754,140.9706,id_4422
+test_0044.jpg,ground truth,0,id_2970,found,0.9899,,193.0003,
+test_0044.jpg,ground truth,1,id_2336,found,0.9871,,100.0,
+test_0044.jpg,ground truth,2,id_7007,found,0.9764,,104.9997,
+test_0044.jpg,ground truth,3,id_4422,found,0.9915,,116.0,
+test_0044.jpg,prediction,0,id_2970,TP,0.9899,0.9823,191.6813,id_2970
+test_0044.jpg,prediction,1,id_4422,TP,0.9915,0.9765,115.7395,id_4422
+test_0044.jpg,prediction,2,id_2336,TP,0.9871,0.9753,100.2491,id_2336
+test_0044.jpg,prediction,3,id_7007,TP,0.9764,0.9296,104.1123,id_7007
+test_0045.jpg,ground truth,0,id_4422,found,0.9854,,123.0003,
+test_0045.jpg,ground truth,1,id_2336,found,0.992,,134.0,
+test_0045.jpg,ground truth,2,id_7007,found,0.9915,,183.0003,
+test_0045.jpg,prediction,0,id_2336,TP,0.992,0.9822,134.5162,id_2336
+test_0045.jpg,prediction,1,id_4422,TP,0.9854,0.9812,122.4348,id_4422
+test_0045.jpg,prediction,2,id_7007,TP,0.9915,0.9686,183.5044,id_7007
+test_0046.jpg,ground truth,0,id_2336,found,0.992,,184.0,
+test_0046.jpg,ground truth,1,id_7007,found,0.9854,,184.9997,
+test_0046.jpg,prediction,0,id_2336,TP,0.992,0.9766,183.7111,id_2336
+test_0046.jpg,prediction,1,id_7007,TP,0.9854,0.9752,183.0237,id_7007
+test_0047.jpg,ground truth,0,id_4422,found,0.9848,,180.0,
+test_0047.jpg,ground truth,1,id_2336,found,0.9848,,163.0003,
+test_0047.jpg,ground truth,2,id_2970,found,0.9915,,104.9997,
+test_0047.jpg,prediction,0,id_4422,TP,0.9848,0.9802,180.8584,id_4422
+test_0047.jpg,prediction,1,id_2336,TP,0.9848,0.9764,161.2111,id_2336
+test_0047.jpg,prediction,2,id_2970,TP,0.9915,0.9657,104.5101,id_2970
+test_0048.jpg,ground truth,0,id_2970,found,0.9827,,96.9997,
+test_0048.jpg,ground truth,1,id_2336,found,0.9788,,158.0,
+test_0048.jpg,ground truth,2,id_4422,found,0.9845,,146.0,
+test_0048.jpg,prediction,0,id_2970,TP,0.9827,0.9877,96.7002,id_2970
+test_0048.jpg,prediction,1,id_2336,TP,0.9788,0.9841,155.3245,id_2336
+test_0048.jpg,prediction,2,id_4422,TP,0.9845,0.9714,145.1959,id_4422
+test_0049.jpg,ground truth,0,id_4422,found,0.987,,146.9997,
+test_0049.jpg,ground truth,1,id_2336,found,0.9906,,191.0003,
+test_0049.jpg,ground truth,2,id_2970,found,0.9756,,90.0,
+test_0049.jpg,ground truth,3,id_7007,found,0.9879,,100.9997,
+test_0049.jpg,prediction,0,id_2336,TP,0.9906,0.9785,189.3994,id_2336
+test_0049.jpg,prediction,1,id_7007,TP,0.9879,0.978,100.7319,id_7007
+test_0049.jpg,prediction,2,id_4422,TP,0.987,0.9774,145.1412,id_4422
+test_0049.jpg,prediction,3,id_2970,TP,0.9756,0.9596,90.0818,id_2970
+test_0050.jpg,ground truth,0,id_4422,found,0.9939,,120.9997,
+test_0050.jpg,ground truth,1,id_2336,found,0.9804,,110.9997,
+test_0050.jpg,ground truth,2,id_2970,found,0.9948,,181.0003,
+test_0050.jpg,prediction,0,id_2970,TP,0.9948,0.9797,181.1168,id_2970
+test_0050.jpg,prediction,1,id_4422,TP,0.9939,0.9762,121.4141,id_4422
+test_0050.jpg,prediction,2,id_2336,TP,0.9804,0.9738,112.2073,id_2336
+test_0051.jpg,ground truth,0,id_7007,found,0.9805,,213.0003,
+test_0051.jpg,ground truth,1,id_2336,found,0.9449,,178.0,
+test_0051.jpg,ground truth,2,id_2970,found,0.9884,,166.9997,
+test_0051.jpg,ground truth,3,id_4422,found,0.9266,,143.0003,
+test_0051.jpg,prediction,0,id_2970,TP,0.9884,0.9738,165.5956,id_2970
+test_0051.jpg,prediction,1,id_7007,TP,0.9805,0.968,215.9958,id_7007
+test_0051.jpg,prediction,2,id_2336,TP,0.9449,0.9664,178.346,id_2336
+test_0051.jpg,prediction,3,id_4422,TP,0.9266,0.965,150.543,id_4422
+test_0052.jpg,ground truth,0,id_4422,found,0.9885,,202.0,
+test_0052.jpg,ground truth,1,id_2336,found,0.9741,,99.0003,
+test_0052.jpg,ground truth,2,id_7007,found,0.9652,,163.0003,
+test_0052.jpg,prediction,0,id_7007,TP,0.9652,0.9766,164.8535,id_7007
+test_0052.jpg,prediction,1,id_4422,TP,0.9885,0.9748,200.8158,id_4422
+test_0052.jpg,prediction,2,id_2336,TP,0.9741,0.9747,97.5303,id_2336
+test_0053.jpg,ground truth,0,id_7007,found,0.9897,,212.0,
+test_0053.jpg,ground truth,1,id_2970,found,0.9926,,139.0003,
+test_0053.jpg,prediction,0,id_2970,TP,0.9926,0.9891,139.1291,id_2970
+test_0053.jpg,prediction,1,id_7007,TP,0.9897,0.9794,212.2418,id_7007
+test_0054.jpg,ground truth,0,id_2336,found,0.9786,,110.9997,
+test_0054.jpg,ground truth,1,id_7007,found,0.9893,,144.9997,
+test_0054.jpg,prediction,0,id_7007,TP,0.9893,0.978,145.0923,id_7007
+test_0054.jpg,prediction,1,id_2336,TP,0.9786,0.9759,109.6085,id_2336
+test_0055.jpg,ground truth,0,id_2336,found,0.9788,,140.9997,
+test_0055.jpg,ground truth,1,id_4422,found,0.9834,,188.0,
+test_0055.jpg,prediction,0,id_2336,TP,0.9788,0.9799,143.0179,id_2336
+test_0055.jpg,prediction,1,id_4422,TP,0.9834,0.9782,189.043,id_4422
+test_0056.jpg,ground truth,0,id_7007,missed,0.0,,94.0,
+test_0056.jpg,ground truth,1,id_2970,found,0.9722,,212.0,
+test_0056.jpg,ground truth,2,id_4422,found,0.9923,,108.0,
+test_0056.jpg,ground truth,3,id_2336,found,0.9906,,196.0,
+test_0056.jpg,prediction,0,id_2336,TP,0.9906,0.9746,195.7421,id_2336
+test_0056.jpg,prediction,1,id_2970,TP,0.9722,0.9663,215.8676,id_2970
+test_0056.jpg,prediction,2,id_4422,TP,0.9923,0.9587,107.3535,id_4422
+test_0057.jpg,ground truth,0,id_2336,found,0.9864,,103.0003,
+test_0057.jpg,ground truth,1,id_7007,found,0.9855,,140.9997,
+test_0057.jpg,prediction,0,id_7007,TP,0.9855,0.9817,140.7883,id_7007
+test_0057.jpg,prediction,1,id_2336,TP,0.9864,0.9809,102.2432,id_2336
+test_0058.jpg,ground truth,0,id_2336,found,0.9862,,143.0003,
+test_0058.jpg,ground truth,1,id_2970,found,0.984,,119.0003,
+test_0058.jpg,ground truth,2,id_4422,found,0.9954,,200.0,
+test_0058.jpg,prediction,0,id_4422,TP,0.9954,0.9817,200.0966,id_4422
+test_0058.jpg,prediction,1,id_2970,TP,0.984,0.9786,117.9712,id_2970
+test_0058.jpg,prediction,2,id_2336,TP,0.9862,0.9683,143.2969,id_2336
+test_0059.jpg,ground truth,0,id_2336,found,0.974,,208.9997,
+test_0059.jpg,ground truth,1,id_7007,found,0.9873,,148.0,
+test_0059.jpg,ground truth,2,id_2970,found,0.9953,,104.9997,
+test_0059.jpg,ground truth,3,id_4422,found,0.9873,,139.0003,
+test_0059.jpg,prediction,0,id_2970,TP,0.9953,0.9916,104.891,id_2970
+test_0059.jpg,prediction,1,id_7007,TP,0.9873,0.9843,147.0992,id_7007
+test_0059.jpg,prediction,2,id_4422,TP,0.9873,0.9758,138.3885,id_4422
+test_0059.jpg,prediction,3,id_2336,TP,0.974,0.9653,213.4111,id_2336
+test_0060.jpg,ground truth,0,id_7007,confused,0.9759,,94.0,
+test_0060.jpg,ground truth,1,id_4422,found,0.9771,,180.0,
+test_0060.jpg,ground truth,2,id_2970,found,0.9711,,115.0003,
+test_0060.jpg,prediction,0,id_2970,TP,0.9711,0.9783,115.1959,id_2970
+test_0060.jpg,prediction,1,id_4422,TP,0.9771,0.9691,182.4871,id_4422
+test_0060.jpg,prediction,2,id_4422,wrong_identity,0.9759,0.8949,92.2703,id_7007
+test_0061.jpg,ground truth,0,id_2970,found,0.9049,,164.0,
+test_0061.jpg,ground truth,1,id_2336,found,0.9818,,130.9997,
+test_0061.jpg,ground truth,2,id_7007,found,0.9741,,138.0,
+test_0061.jpg,ground truth,3,id_4422,found,0.9806,,99.0003,
+test_0061.jpg,prediction,0,id_7007,TP,0.9741,0.9819,141.0824,id_7007
+test_0061.jpg,prediction,1,id_4422,TP,0.9806,0.9703,97.8972,id_4422
+test_0061.jpg,prediction,2,id_2336,TP,0.9818,0.9697,130.6228,id_2336
+test_0061.jpg,prediction,3,id_2970,TP,0.9049,0.9607,169.2689,id_2970
+test_0062.jpg,ground truth,0,id_7007,found,0.9764,,158.0,
+test_0062.jpg,ground truth,1,id_2970,found,0.9925,,206.9997,
+test_0062.jpg,ground truth,2,id_2336,found,0.979,,171.0003,
+test_0062.jpg,ground truth,3,id_4422,found,0.9798,,106.9997,
+test_0062.jpg,prediction,0,id_2336,TP,0.979,0.984,168.4352,id_2336
+test_0062.jpg,prediction,1,id_2970,TP,0.9925,0.9739,206.4435,id_2970
+test_0062.jpg,prediction,2,id_7007,TP,0.9764,0.9682,156.6797,id_7007
+test_0062.jpg,prediction,3,id_4422,TP,0.9798,0.9592,105.6188,id_4422
+test_0063.jpg,ground truth,0,id_2970,found,0.9725,,196.0,
+test_0063.jpg,ground truth,1,id_7007,found,0.9751,,204.9997,
+test_0063.jpg,prediction,0,id_7007,TP,0.9751,0.9756,204.622,id_7007
+test_0063.jpg,prediction,1,id_2970,TP,0.9725,0.9703,197.4492,id_2970
+test_0064.jpg,ground truth,0,id_2970,found,0.933,,155.0003,
+test_0064.jpg,ground truth,1,id_4422,found,0.8928,,184.9997,
+test_0064.jpg,ground truth,2,id_7007,found,0.9776,,208.0,
+test_0064.jpg,prediction,0,id_7007,TP,0.9776,0.9723,212.2952,id_7007
+test_0064.jpg,prediction,1,id_2970,TP,0.933,0.9685,152.1012,id_2970
+test_0064.jpg,prediction,2,id_4422,TP,0.8928,0.9665,189.0925,id_4422
+test_0065.jpg,ground truth,0,id_7007,found,0.994,,176.9997,
+test_0065.jpg,ground truth,1,id_2970,found,0.9723,,152.0,
+test_0065.jpg,prediction,0,id_7007,TP,0.994,0.977,177.7247,id_7007
+test_0065.jpg,prediction,1,id_2970,TP,0.9723,0.9764,151.9941,id_2970
+test_0066.jpg,ground truth,0,id_7007,found,0.9702,,208.0,
+test_0066.jpg,ground truth,1,id_2970,found,0.9864,,166.9997,
+test_0066.jpg,ground truth,2,id_4422,found,0.9911,,119.0003,
+test_0066.jpg,ground truth,3,id_2336,found,0.9828,,139.0003,
+test_0066.jpg,prediction,0,id_2970,TP,0.9864,0.9819,166.2839,id_2970
+test_0066.jpg,prediction,1,id_4422,TP,0.9911,0.9811,118.7697,id_4422
+test_0066.jpg,prediction,2,id_7007,TP,0.9702,0.9807,202.6431,id_7007
+test_0066.jpg,prediction,3,id_2336,TP,0.9828,0.9796,137.739,id_2336
+test_0067.jpg,ground truth,0,id_2336,found,0.9871,,139.0003,
+test_0067.jpg,ground truth,1,id_4422,found,0.9898,,128.0,
+test_0067.jpg,ground truth,2,id_7007,confused,0.9823,,114.0,
+test_0067.jpg,prediction,0,id_4422,TP,0.9898,0.9823,128.8158,id_4422
+test_0067.jpg,prediction,1,id_2336,TP,0.9871,0.9798,138.2083,id_2336
+test_0067.jpg,prediction,2,id_4422,wrong_identity,0.9823,0.8862,114.3358,id_7007
+test_0068.jpg,ground truth,0,id_4422,found,0.96,,112.0,
+test_0068.jpg,ground truth,1,id_2970,found,0.9766,,108.0,
+test_0068.jpg,ground truth,2,id_2336,found,0.9965,,196.0,
+test_0068.jpg,ground truth,3,id_7007,missed,0.0,,135.0003,
+test_0068.jpg,prediction,0,id_2336,TP,0.9965,0.9826,195.7592,id_2336
+test_0068.jpg,prediction,1,id_2970,TP,0.9766,0.9683,109.652,id_2970
+test_0068.jpg,prediction,2,id_4422,TP,0.96,0.9593,113.9995,id_4422
+test_0069.jpg,ground truth,0,id_2970,found,0.9748,,172.0,
+test_0069.jpg,ground truth,1,id_4422,found,0.9801,,90.0,
+test_0069.jpg,ground truth,2,id_7007,found,0.9937,,161.0003,
+test_0069.jpg,prediction,0,id_2970,TP,0.9748,0.9808,169.0494,id_2970
+test_0069.jpg,prediction,1,id_4422,TP,0.9801,0.9719,90.0587,id_4422
+test_0069.jpg,prediction,2,id_7007,TP,0.9937,0.9681,161.1347,id_7007
+test_0070.jpg,ground truth,0,id_7007,found,0.9898,,149.0003,
+test_0070.jpg,ground truth,1,id_4422,found,0.9801,,198.9997,
+test_0070.jpg,ground truth,2,id_2970,found,0.992,,172.0,
+test_0070.jpg,ground truth,3,id_2336,found,0.9967,,90.9997,
+test_0070.jpg,prediction,0,id_2336,TP,0.9967,0.9808,90.8242,id_2336
+test_0070.jpg,prediction,1,id_4422,TP,0.9801,0.9795,196.1421,id_4422
+test_0070.jpg,prediction,2,id_7007,TP,0.9898,0.976,149.3011,id_7007
+test_0070.jpg,prediction,3,id_2970,TP,0.992,0.9752,173.0576,id_2970
+test_0071.jpg,ground truth,0,id_7007,missed,0.0,,113.0003,
+test_0071.jpg,ground truth,1,id_2336,found,0.9544,,99.0003,
+test_0071.jpg,prediction,0,id_2336,TP,0.9544,0.9795,96.224,id_2336
+test_0072.jpg,ground truth,0,id_2336,found,0.9835,,130.9997,
+test_0072.jpg,ground truth,1,id_4422,found,0.9794,,94.0,
+test_0072.jpg,ground truth,2,id_2970,found,0.9845,,153.0003,
+test_0072.jpg,ground truth,3,id_7007,found,0.9265,,156.9997,
+test_0072.jpg,prediction,0,id_2970,TP,0.9845,0.9824,152.2734,id_2970
+test_0072.jpg,prediction,1,id_2336,TP,0.9835,0.9812,131.6506,id_2336
+test_0072.jpg,prediction,2,id_4422,TP,0.9794,0.9713,93.2988,id_4422
+test_0072.jpg,prediction,3,id_7007,TP,0.9265,0.8612,168.2292,id_7007
+test_0073.jpg,ground truth,0,id_4422,found,0.9888,,104.0,
+test_0073.jpg,ground truth,1,id_7007,found,0.9847,,198.0,
+test_0073.jpg,ground truth,2,id_2970,found,0.9928,,163.0003,
+test_0073.jpg,prediction,0,id_2970,TP,0.9928,0.9859,163.2673,id_2970
+test_0073.jpg,prediction,1,id_4422,TP,0.9888,0.9776,104.1771,id_4422
+test_0073.jpg,prediction,2,id_7007,TP,0.9847,0.97,197.2313,id_7007
+test_0074.jpg,ground truth,0,id_7007,found,0.9847,,120.9997,
+test_0074.jpg,ground truth,1,id_4422,found,0.9711,,150.9997,
+test_0074.jpg,prediction,0,id_4422,TP,0.9711,0.9849,148.7863,id_4422
+test_0074.jpg,prediction,1,id_7007,TP,0.9847,0.9639,120.408,id_7007
+test_0075.jpg,ground truth,0,id_2970,found,0.9302,,103.0003,
+test_0075.jpg,ground truth,1,id_7007,found,0.9798,,198.9997,
+test_0075.jpg,ground truth,2,id_4422,found,0.9833,,206.9997,
+test_0075.jpg,prediction,0,id_4422,TP,0.9833,0.9801,204.9164,id_4422
+test_0075.jpg,prediction,1,id_7007,TP,0.9798,0.9738,196.9025,id_7007
+test_0075.jpg,prediction,2,id_2970,TP,0.9302,0.9671,96.8013,id_2970
+test_0076.jpg,ground truth,0,id_7007,confused,0.9831,,119.0003,
+test_0076.jpg,ground truth,1,id_4422,found,0.9914,,206.0,
+test_0076.jpg,ground truth,2,id_2336,found,0.9882,,178.0,
+test_0076.jpg,prediction,0,id_4422,TP,0.9914,0.9754,205.1506,id_4422
+test_0076.jpg,prediction,1,id_2336,TP,0.9882,0.9731,178.4215,id_2336
+test_0076.jpg,prediction,2,id_4422,wrong_identity,0.9831,0.9243,117.7769,id_7007
+test_0077.jpg,ground truth,0,id_4422,found,0.9848,,110.9997,
+test_0077.jpg,ground truth,1,id_2336,found,0.959,,204.0,
+test_0077.jpg,ground truth,2,id_2970,found,0.9881,,132.0,
+test_0077.jpg,prediction,0,id_2336,TP,0.959,0.974,205.2858,id_2336
+test_0077.jpg,prediction,1,id_2970,TP,0.9881,0.9687,132.5173,id_2970
+test_0077.jpg,prediction,2,id_4422,TP,0.9848,0.9487,111.907,id_4422
+test_0078.jpg,ground truth,0,id_4422,missed,0.0,,188.0,
+test_0078.jpg,ground truth,1,id_2336,found,0.9813,,173.0003,
+test_0078.jpg,ground truth,2,id_2970,found,0.971,,156.0,
+test_0078.jpg,prediction,0,id_2336,TP,0.9813,0.9745,174.769,id_2336
+test_0078.jpg,prediction,1,id_2970,TP,0.971,0.971,152.2219,id_2970
+test_0079.jpg,ground truth,0,id_7007,found,0.9835,,171.0003,
+test_0079.jpg,ground truth,1,id_4422,found,0.9828,,90.0,
+test_0079.jpg,ground truth,2,id_2970,found,0.9711,,90.9997,
+test_0079.jpg,ground truth,3,id_2336,found,0.9839,,181.0003,
+test_0079.jpg,prediction,0,id_2336,TP,0.9839,0.9828,179.5236,id_2336
+test_0079.jpg,prediction,1,id_2970,TP,0.9711,0.9759,89.0744,id_2970
+test_0079.jpg,prediction,2,id_7007,TP,0.9835,0.9646,171.2161,id_7007
+test_0079.jpg,prediction,3,id_4422,TP,0.9828,0.9556,89.7941,id_4422
+test_0080.jpg,ground truth,0,id_7007,found,0.9588,,204.0,
+test_0080.jpg,ground truth,1,id_2336,found,0.9812,,191.0003,
+test_0080.jpg,ground truth,2,id_2970,found,0.9832,,186.9997,
+test_0080.jpg,ground truth,3,id_4422,missed,0.0,,112.0,
+test_0080.jpg,prediction,0,id_7007,TP,0.9588,0.977,201.9336,id_7007
+test_0080.jpg,prediction,1,id_2336,TP,0.9812,0.9704,189.9687,id_2336
+test_0080.jpg,prediction,2,id_2970,TP,0.9832,0.9695,186.343,id_2970
+test_0081.jpg,ground truth,0,id_2970,found,0.9897,,212.0,
+test_0081.jpg,ground truth,1,id_2336,found,0.9828,,136.9997,
+test_0081.jpg,prediction,0,id_2336,TP,0.9828,0.9767,137.5655,id_2336
+test_0081.jpg,prediction,1,id_2970,TP,0.9897,0.9684,210.8613,id_2970
+test_0082.jpg,ground truth,0,id_2336,found,0.9844,,212.0,
+test_0082.jpg,ground truth,1,id_4422,found,0.9911,,204.9997,
+test_0082.jpg,ground truth,2,id_2970,found,0.994,,123.0003,
+test_0082.jpg,ground truth,3,id_7007,confused,0.9863,,114.0,
+test_0082.jpg,prediction,0,id_2970,TP,0.994,0.9781,123.5806,id_2970
+test_0082.jpg,prediction,1,id_2336,TP,0.9844,0.9763,211.1196,id_2336
+test_0082.jpg,prediction,2,id_4422,TP,0.9911,0.9746,205.226,id_4422
+test_0082.jpg,prediction,3,id_4422,wrong_identity,0.9863,0.9571,114.8624,id_7007
+test_0083.jpg,ground truth,0,id_2336,found,0.9897,,220.0,
+test_0083.jpg,ground truth,1,id_2970,found,0.9858,,174.0,
+test_0083.jpg,ground truth,2,id_4422,found,0.9933,,126.9997,
+test_0083.jpg,prediction,0,id_2970,TP,0.9858,0.9786,174.3215,id_2970
+test_0083.jpg,prediction,1,id_4422,TP,0.9933,0.9785,127.0975,id_4422
+test_0083.jpg,prediction,2,id_2336,TP,0.9897,0.9712,220.6153,id_2336
+test_0084.jpg,ground truth,0,id_7007,found,0.9737,,130.0,
+test_0084.jpg,ground truth,1,id_4422,found,0.9933,,183.0003,
+test_0084.jpg,ground truth,2,id_2970,found,0.9938,,164.9997,
+test_0084.jpg,ground truth,3,id_2336,found,0.9767,,124.0,
+test_0084.jpg,prediction,0,id_2970,TP,0.9938,0.9926,164.2405,id_2970
+test_0084.jpg,prediction,1,id_2336,TP,0.9767,0.9872,122.734,id_2336
+test_0084.jpg,prediction,2,id_7007,TP,0.9737,0.9768,127.9435,id_7007
+test_0084.jpg,prediction,3,id_4422,TP,0.9933,0.9749,182.4455,id_4422
+test_0085.jpg,ground truth,0,id_4422,found,0.9717,,132.0,
+test_0085.jpg,ground truth,1,id_2970,found,0.9816,,176.0,
+test_0085.jpg,ground truth,2,id_7007,found,0.975,,133.0003,
+test_0085.jpg,ground truth,3,id_2336,found,0.971,,148.0,
+test_0085.jpg,prediction,0,id_4422,TP,0.9717,0.979,130.7229,id_4422
+test_0085.jpg,prediction,1,id_2336,TP,0.971,0.9756,146.7981,id_2336
+test_0085.jpg,prediction,2,id_7007,TP,0.975,0.97,134.671,id_7007
+test_0085.jpg,prediction,3,id_2970,TP,0.9816,0.9606,173.9726,id_2970
+test_0086.jpg,ground truth,0,id_4422,found,0.9449,,90.0,
+test_0086.jpg,ground truth,1,id_7007,found,0.9826,,150.9997,
+test_0086.jpg,prediction,0,id_7007,TP,0.9826,0.9749,150.9284,id_7007
+test_0086.jpg,prediction,1,id_4422,TP,0.9449,0.9587,93.3795,id_4422
+test_0087.jpg,ground truth,0,id_2336,found,0.9912,,174.0,
+test_0087.jpg,ground truth,1,id_7007,found,0.988,,102.0,
+test_0087.jpg,ground truth,2,id_4422,found,0.9919,,153.0003,
+test_0087.jpg,ground truth,3,id_2970,found,0.9887,,158.0,
+test_0087.jpg,prediction,0,id_2336,TP,0.9912,0.9874,173.0784,id_2336
+test_0087.jpg,prediction,1,id_2970,TP,0.9887,0.9866,157.7743,id_2970
+test_0087.jpg,prediction,2,id_4422,TP,0.9919,0.9767,152.3256,id_4422
+test_0087.jpg,prediction,3,id_7007,TP,0.988,0.968,101.5035,id_7007
+test_0088.jpg,ground truth,0,id_2336,found,0.9889,,191.0003,
+test_0088.jpg,ground truth,1,id_4422,found,0.932,,170.0,
+test_0088.jpg,ground truth,2,id_7007,found,0.9782,,134.0,
+test_0088.jpg,prediction,0,id_7007,TP,0.9782,0.9788,132.7291,id_7007
+test_0088.jpg,prediction,1,id_2336,TP,0.9889,0.9768,189.691,id_2336
+test_0088.jpg,prediction,2,id_4422,TP,0.932,0.9757,170.0997,id_4422
+test_0089.jpg,ground truth,0,id_2970,found,0.9947,,198.0,
+test_0089.jpg,ground truth,1,id_4422,found,0.9909,,113.0003,
+test_0089.jpg,prediction,0,id_2970,TP,0.9947,0.9858,197.8346,id_2970
+test_0089.jpg,prediction,1,id_4422,TP,0.9909,0.9765,112.8034,id_4422
+test_0090.jpg,ground truth,0,id_7007,found,0.9655,,172.0,
+test_0090.jpg,ground truth,1,id_2970,found,0.9844,,159.0003,
+test_0090.jpg,prediction,0,id_7007,TP,0.9655,0.9826,166.9296,id_7007
+test_0090.jpg,prediction,1,id_2970,TP,0.9844,0.9655,160.6035,id_2970
+test_0091.jpg,ground truth,0,id_2336,found,0.9604,,136.9997,
+test_0091.jpg,ground truth,1,id_4422,found,0.9903,,214.0,
+test_0091.jpg,ground truth,2,id_2970,found,0.9658,,130.0,
+test_0091.jpg,prediction,0,id_2970,TP,0.9658,0.9798,130.4426,id_2970
+test_0091.jpg,prediction,1,id_4422,TP,0.9903,0.9755,214.6412,id_4422
+test_0091.jpg,prediction,2,id_2336,TP,0.9604,0.965,140.0394,id_2336
+test_0092.jpg,ground truth,0,id_4422,found,0.9816,,116.0,
+test_0092.jpg,ground truth,1,id_7007,found,0.9946,,211.0003,
+test_0092.jpg,ground truth,2,id_2336,found,0.9913,,133.0003,
+test_0092.jpg,ground truth,3,id_2970,found,0.9654,,136.0,
+test_0092.jpg,prediction,0,id_2970,TP,0.9654,0.9888,134.4173,id_2970
+test_0092.jpg,prediction,1,id_2336,TP,0.9913,0.9778,132.4539,id_2336
+test_0092.jpg,prediction,2,id_7007,TP,0.9946,0.9655,210.3817,id_7007
+test_0092.jpg,prediction,3,id_4422,TP,0.9816,0.9458,115.7273,id_4422
+test_0093.jpg,ground truth,0,id_2970,found,0.9897,,188.0,
+test_0093.jpg,ground truth,1,id_4422,found,0.9944,,208.9997,
+test_0093.jpg,ground truth,2,id_2336,found,0.9884,,178.0,
+test_0093.jpg,prediction,0,id_2336,TP,0.9884,0.9829,176.4542,id_2336
+test_0093.jpg,prediction,1,id_2970,TP,0.9897,0.9829,187.8441,id_2970
+test_0093.jpg,prediction,2,id_4422,TP,0.9944,0.9795,209.2794,id_4422
+test_0094.jpg,ground truth,0,id_2336,found,0.9831,,123.0003,
+test_0094.jpg,ground truth,1,id_7007,found,0.9833,,96.0,
+test_0094.jpg,prediction,0,id_7007,TP,0.9833,0.9801,96.2327,id_7007
+test_0094.jpg,prediction,1,id_2336,TP,0.9831,0.9767,121.2604,id_2336
+test_0095.jpg,ground truth,0,id_4422,found,0.9875,,150.9997,
+test_0095.jpg,ground truth,1,id_2336,found,0.945,,140.9997,
+test_0095.jpg,ground truth,2,id_2970,found,0.9784,,146.0,
+test_0095.jpg,prediction,0,id_2336,TP,0.945,0.9814,140.9291,id_2336
+test_0095.jpg,prediction,1,id_4422,TP,0.9875,0.9806,151.3903,id_4422
+test_0095.jpg,prediction,2,id_2970,TP,0.9784,0.9691,146.916,id_2970
+test_0096.jpg,ground truth,0,id_2970,found,0.9883,,102.0,
+test_0096.jpg,ground truth,1,id_4422,found,0.9899,,206.0,
+test_0096.jpg,prediction,0,id_2970,TP,0.9883,0.9869,102.0176,id_2970
+test_0096.jpg,prediction,1,id_4422,TP,0.9899,0.9772,206.2052,id_4422
+test_0097.jpg,ground truth,0,id_7007,missed,0.0,,196.9997,
+test_0097.jpg,ground truth,1,id_2336,found,0.9505,,100.9997,
+test_0097.jpg,ground truth,2,id_4422,found,0.9899,,138.0,
+test_0097.jpg,prediction,0,id_4422,TP,0.9899,0.9735,138.6991,id_4422
+test_0097.jpg,prediction,1,id_2336,TP,0.9505,0.952,101.2938,id_2336
+test_0098.jpg,ground truth,0,id_2970,found,0.9916,,202.0,
+test_0098.jpg,ground truth,1,id_7007,found,0.986,,98.0,
+test_0098.jpg,ground truth,2,id_2336,found,0.9923,,146.0,
+test_0098.jpg,ground truth,3,id_4422,found,0.9861,,168.9997,
+test_0098.jpg,prediction,0,id_2970,TP,0.9916,0.9862,201.7242,id_2970
+test_0098.jpg,prediction,1,id_4422,TP,0.9861,0.9857,167.3069,id_4422
+test_0098.jpg,prediction,2,id_2336,TP,0.9923,0.9778,145.8263,id_2336
+test_0098.jpg,prediction,3,id_7007,TP,0.986,0.9772,97.9184,id_7007
+test_0099.jpg,ground truth,0,id_7007,found,0.9872,,178.0,
+test_0099.jpg,ground truth,1,id_2336,found,0.9903,,130.0,
+test_0099.jpg,ground truth,2,id_4422,found,0.9883,,116.9997,
+test_0099.jpg,prediction,0,id_4422,TP,0.9883,0.9815,117.0438,id_4422
+test_0099.jpg,prediction,1,id_2336,TP,0.9903,0.9814,129.2386,id_2336
+test_0099.jpg,prediction,2,id_7007,TP,0.9872,0.87,177.182,id_7007
+test_0100.jpg,ground truth,0,id_2336,found,0.9738,,188.0,
+test_0100.jpg,ground truth,1,id_7007,confused,0.9843,,108.0,
+test_0100.jpg,ground truth,2,id_4422,found,0.9823,,96.9997,
+test_0100.jpg,ground truth,3,id_2970,found,0.9845,,124.9997,
+test_0100.jpg,prediction,0,id_2336,TP,0.9738,0.9769,186.9564,id_2336
+test_0100.jpg,prediction,1,id_4422,TP,0.9823,0.9741,97.942,id_4422
+test_0100.jpg,prediction,2,id_2970,TP,0.9845,0.9737,123.8975,id_2970
+test_0100.jpg,prediction,3,id_4422,wrong_identity,0.9843,0.8736,108.585,id_7007
+test_aug_0001.jpg,ground truth,0,id_7007,found,0.9912,,167.0,
+test_aug_0001.jpg,ground truth,1,id_2970,found,0.9821,,166.0,
+test_aug_0001.jpg,prediction,0,id_2970,TP,0.9821,0.9721,165.4434,id_2970
+test_aug_0001.jpg,prediction,1,id_7007,TP,0.9912,0.9699,167.0423,id_7007
+test_aug_0002.jpg,ground truth,0,id_4422,missed,0.0,,129.3124,
+test_aug_0002.jpg,ground truth,1,id_2970,found,0.9487,,165.5424,
+test_aug_0002.jpg,prediction,0,id_2970,TP,0.9487,0.9455,160.6521,id_2970
+test_aug_0003.jpg,ground truth,0,id_2336,found,0.9927,,117.9999,
+test_aug_0003.jpg,prediction,0,id_2336,TP,0.9927,0.9835,117.2679,id_2336
+test_aug_0004.jpg,ground truth,0,id_2336,found,0.9912,,211.0005,
+test_aug_0004.jpg,ground truth,1,id_2970,found,0.9707,,90.9999,
+test_aug_0004.jpg,prediction,0,id_2970,TP,0.9707,0.9821,91.9512,id_2970
+test_aug_0004.jpg,prediction,1,id_2336,TP,0.9912,0.9687,212.3235,id_2336
+test_aug_0005.jpg,ground truth,0,id_2336,found,0.9521,,139.0001,
+test_aug_0005.jpg,ground truth,1,id_2970,found,0.9814,,156.0001,
+test_aug_0005.jpg,prediction,0,id_2970,TP,0.9814,0.9716,155.4004,id_2970
+test_aug_0005.jpg,prediction,1,id_2336,TP,0.9521,0.9474,142.8627,id_2336
+test_aug_0006.jpg,ground truth,0,id_4422,found,0.9583,,147.726,
+test_aug_0006.jpg,ground truth,1,id_2970,found,0.9359,,108.8334,
+test_aug_0006.jpg,prediction,0,id_4422,TP,0.9583,0.9679,145.2054,id_4422
+test_aug_0006.jpg,prediction,1,id_2970,TP,0.9359,0.9421,106.3179,id_2970
+test_aug_0007.jpg,ground truth,0,id_7007,found,0.977,,124.0002,
+test_aug_0007.jpg,ground truth,1,id_2970,found,0.9839,,196.0002,
+test_aug_0007.jpg,prediction,0,id_2970,TP,0.9839,0.9615,196.2228,id_2970
+test_aug_0007.jpg,prediction,1,id_7007,TP,0.977,0.9492,123.2066,id_7007
+test_aug_0008.jpg,ground truth,0,id_2970,found,0.9874,,217.9998,
+test_aug_0008.jpg,prediction,0,id_2970,TP,0.9874,0.967,216.3753,id_2970
+test_aug_0009.jpg,ground truth,0,id_7007,found,0.9771,,167.9999,
+test_aug_0009.jpg,ground truth,1,id_4422,found,0.9846,,130.9995,
+test_aug_0009.jpg,prediction,0,id_4422,TP,0.9846,0.9765,130.5978,id_4422
+test_aug_0009.jpg,prediction,1,id_7007,TP,0.9771,0.964,167.5507,id_7007
+test_aug_0010.jpg,ground truth,0,id_4422,found,0.9741,,99.0441,
+test_aug_0010.jpg,ground truth,1,id_7007,found,0.9749,,131.6056,
+test_aug_0010.jpg,ground truth,2,id_2970,found,0.969,,204.6019,
+test_aug_0010.jpg,ground truth,3,id_2336,found,0.958,,148.1998,
+test_aug_0010.jpg,prediction,0,id_7007,TP,0.9749,0.9825,132.4089,id_7007
+test_aug_0010.jpg,prediction,1,id_2336,TP,0.958,0.9663,148.9872,id_2336
+test_aug_0010.jpg,prediction,2,id_4422,TP,0.9741,0.9635,98.0299,id_4422
+test_aug_0010.jpg,prediction,3,id_2970,TP,0.969,0.9321,206.086,id_2970
+test_aug_0011.jpg,ground truth,0,id_2970,found,0.957,,133.9052,
+test_aug_0011.jpg,ground truth,1,id_7007,found,0.9136,,144.8384,
+test_aug_0011.jpg,ground truth,2,id_2336,found,0.9842,,134.8178,
+test_aug_0011.jpg,prediction,0,id_7007,TP,0.9136,0.9739,155.4454,id_7007
+test_aug_0011.jpg,prediction,1,id_2336,TP,0.9842,0.9674,136.4706,id_2336
+test_aug_0011.jpg,prediction,2,id_2970,TP,0.957,0.9456,136.2167,id_2970
+test_aug_0012.jpg,ground truth,0,id_2970,found,0.8339,,92.498,
+test_aug_0012.jpg,ground truth,1,id_4422,confused,0.9175,,183.5312,
+test_aug_0012.jpg,ground truth,2,id_7007,missed,0.0,,127.2533,
+test_aug_0012.jpg,ground truth,3,id_2336,found,0.8393,,133.605,
+test_aug_0012.jpg,prediction,0,id_2970,TP,0.8339,0.9507,94.7796,id_2970
+test_aug_0012.jpg,prediction,1,id_2336,TP,0.8393,0.9148,124.6706,id_2336
+test_aug_0012.jpg,prediction,2,id_2336,wrong_identity,0.9175,0.8081,171.8071,id_4422
+test_aug_0013.jpg,ground truth,0,id_4422,confused,0.977,,171.9868,
+test_aug_0013.jpg,prediction,0,id_2970,wrong_identity,0.977,0.9335,171.2981,id_4422
+test_aug_0014.jpg,ground truth,0,id_2970,found,0.9592,,130.1134,
+test_aug_0014.jpg,prediction,0,id_2970,TP,0.9592,0.9632,128.2797,id_2970
+test_aug_0015.jpg,ground truth,0,id_2970,found,0.8899,,161.573,
+test_aug_0015.jpg,ground truth,1,id_2336,found,0.9543,,209.452,
+test_aug_0015.jpg,ground truth,2,id_7007,missed,0.0,,234.1858,
+test_aug_0015.jpg,prediction,0,id_2336,TP,0.9543,0.9698,205.2293,id_2336
+test_aug_0015.jpg,prediction,1,id_2970,TP,0.8899,0.9635,157.4895,id_2970
+test_aug_0016.jpg,ground truth,0,id_2970,found,0.8427,,203.5661,
+test_aug_0016.jpg,prediction,0,id_2970,TP,0.8427,0.9286,194.2328,id_2970
+test_aug_0017.jpg,ground truth,0,id_2970,found,0.9554,,135.5778,
+test_aug_0017.jpg,ground truth,1,id_7007,found,0.9458,,102.5195,
+test_aug_0017.jpg,prediction,0,id_7007,TP,0.9458,0.9667,103.2219,id_7007
+test_aug_0017.jpg,prediction,1,id_2970,TP,0.9554,0.9658,134.2773,id_2970
+test_aug_0018.jpg,ground truth,0,id_2970,found,0.9923,,166.9995,
+test_aug_0018.jpg,ground truth,1,id_4422,found,0.9863,,191.0003,
+test_aug_0018.jpg,ground truth,2,id_7007,found,0.9817,,178.9996,
+test_aug_0018.jpg,prediction,0,id_7007,TP,0.9817,0.9787,180.0394,id_7007
+test_aug_0018.jpg,prediction,1,id_2970,TP,0.9923,0.9761,166.8616,id_2970
+test_aug_0018.jpg,prediction,2,id_4422,TP,0.9863,0.9699,192.5108,id_4422
+test_aug_0019.jpg,ground truth,0,id_2336,found,0.9113,,268.4426,
+test_aug_0019.jpg,ground truth,1,id_2970,found,0.9259,,128.1884,
+test_aug_0019.jpg,prediction,0,id_2970,TP,0.9259,0.9453,123.3172,id_2970
+test_aug_0019.jpg,prediction,1,id_2336,TP,0.9113,0.912,251.3831,id_2336
+test_aug_0020.jpg,ground truth,0,id_7007,found,0.9818,,208.9998,
+test_aug_0020.jpg,ground truth,1,id_2336,found,0.9732,,139.0,
+test_aug_0020.jpg,prediction,0,id_2336,TP,0.9732,0.9801,138.9564,id_2336
+test_aug_0020.jpg,prediction,1,id_7007,TP,0.9818,0.8878,209.5252,id_7007
+test_aug_0021.jpg,ground truth,0,id_4422,found,0.9309,,239.9895,
+test_aug_0021.jpg,ground truth,1,id_7007,found,0.9017,,210.9726,
+test_aug_0021.jpg,prediction,0,id_4422,TP,0.9309,0.9327,229.2821,id_4422
+test_aug_0021.jpg,prediction,1,id_7007,TP,0.9017,0.8404,227.9443,id_7007
+test_aug_0022.jpg,ground truth,0,id_4422,found,0.95,,140.0053,
+test_aug_0022.jpg,ground truth,1,id_2336,found,0.9654,,120.1635,
+test_aug_0022.jpg,prediction,0,id_2336,TP,0.9654,0.9725,117.612,id_2336
+test_aug_0022.jpg,prediction,1,id_4422,TP,0.95,0.9195,138.1908,id_4422
+test_aug_0023.jpg,ground truth,0,id_2336,missed,0.0,,91.9998,
+test_aug_0023.jpg,ground truth,1,id_4422,confused,0.9828,,149.9999,
+test_aug_0023.jpg,ground truth,2,id_2970,found,0.9907,,184.0,
+test_aug_0023.jpg,prediction,0,id_2970,TP,0.9907,0.9723,184.2102,id_2970
+test_aug_0023.jpg,prediction,1,id_7007,wrong_identity,0.9828,0.9368,149.0273,id_4422
+test_aug_0024.jpg,ground truth,0,id_2336,found,0.9722,,160.0002,
+test_aug_0024.jpg,ground truth,1,id_2970,found,0.9817,,203.0,
+test_aug_0024.jpg,ground truth,2,id_7007,confused,0.9032,,134.0001,
+test_aug_0024.jpg,prediction,0,id_2336,TP,0.9722,0.9843,158.3242,id_2336
+test_aug_0024.jpg,prediction,1,id_2970,TP,0.9817,0.9625,201.7749,id_2970
+test_aug_0024.jpg,prediction,2,id_4422,wrong_identity,0.9032,0.8677,143.4851,id_7007
+test_aug_0025.jpg,ground truth,0,id_2336,found,0.9672,,143.1913,
+test_aug_0025.jpg,ground truth,1,id_2970,found,0.9553,,122.7618,
+test_aug_0025.jpg,ground truth,2,id_7007,found,0.9485,,155.1703,
+test_aug_0025.jpg,prediction,0,id_7007,TP,0.9485,0.9659,151.7037,id_7007
+test_aug_0025.jpg,prediction,1,id_2970,TP,0.9553,0.958,124.4034,id_2970
+test_aug_0025.jpg,prediction,2,id_2336,TP,0.9672,0.9433,143.4928,id_2336
+test_aug_0026.jpg,ground truth,0,id_2336,found,0.9368,,189.9999,
+test_aug_0026.jpg,ground truth,1,id_4422,found,0.9899,,90.0,
+test_aug_0026.jpg,prediction,0,id_4422,TP,0.9899,0.978,89.3318,id_4422
+test_aug_0026.jpg,prediction,1,id_2336,TP,0.9368,0.9537,184.9182,id_2336
+test_aug_0027.jpg,ground truth,0,id_4422,found,0.9829,,104.9999,
+test_aug_0027.jpg,ground truth,1,id_7007,missed,0.0,,110.9997,
+test_aug_0027.jpg,prediction,0,id_4422,TP,0.9829,0.968,105.2579,id_4422
+test_aug_0027.jpg,prediction,1,id_2336,background,0.0,0.8125,196.6393,
+test_aug_0028.jpg,ground truth,0,id_7007,found,0.9293,,171.3006,
+test_aug_0028.jpg,ground truth,1,id_2970,found,0.9515,,174.4402,
+test_aug_0028.jpg,prediction,0,id_2970,TP,0.9515,0.9644,169.7537,id_2970
+test_aug_0028.jpg,prediction,1,id_7007,TP,0.9293,0.9539,176.4408,id_7007
+test_aug_0029.jpg,ground truth,0,id_7007,found,0.9853,,216.0,
+test_aug_0029.jpg,ground truth,1,id_2336,found,0.9698,,134.0001,
+test_aug_0029.jpg,ground truth,2,id_2970,found,0.9869,,108.0,
+test_aug_0029.jpg,prediction,0,id_2970,TP,0.9869,0.9818,108.6302,id_2970
+test_aug_0029.jpg,prediction,1,id_7007,TP,0.9853,0.9807,213.2468,id_7007
+test_aug_0029.jpg,prediction,2,id_2336,TP,0.9698,0.9678,133.5914,id_2336
+test_aug_0030.jpg,ground truth,0,id_7007,found,0.9402,,100.9953,
+test_aug_0030.jpg,ground truth,1,id_2336,missed,0.0,,152.6877,
+test_aug_0030.jpg,ground truth,2,id_4422,found,0.9747,,158.1318,
+test_aug_0030.jpg,prediction,0,id_4422,TP,0.9747,0.9417,155.554,id_4422
+test_aug_0030.jpg,prediction,1,id_7007,TP,0.9402,0.9214,105.5893,id_7007
+test_aug_0031.jpg,ground truth,0,id_2970,found,0.9838,,145.9998,
+test_aug_0031.jpg,ground truth,1,id_4422,found,0.9846,,219.0002,
+test_aug_0031.jpg,prediction,0,id_2970,TP,0.9838,0.9699,147.3475,id_2970
+test_aug_0031.jpg,prediction,1,id_4422,TP,0.9846,0.9613,219.7018,id_4422
+test_aug_0031.jpg,prediction,2,id_2336,background,0.0,0.9438,104.8939,
+test_aug_0032.jpg,ground truth,0,id_2970,found,0.9128,,158.5733,
+test_aug_0032.jpg,ground truth,1,id_7007,found,0.9635,,172.1331,
+test_aug_0032.jpg,prediction,0,id_7007,TP,0.9635,0.971,172.8888,id_7007
+test_aug_0032.jpg,prediction,1,id_2970,TP,0.9128,0.949,151.8752,id_2970
+test_aug_0033.jpg,ground truth,0,id_2336,found,0.979,,211.0005,
+test_aug_0033.jpg,ground truth,1,id_7007,found,0.9859,,139.0005,
+test_aug_0033.jpg,ground truth,2,id_2970,found,0.9117,,156.9996,
+test_aug_0033.jpg,prediction,0,id_2970,TP,0.9117,0.9694,158.6296,id_2970
+test_aug_0033.jpg,prediction,1,id_2336,TP,0.979,0.969,214.0064,id_2336
+test_aug_0033.jpg,prediction,2,id_7007,TP,0.9859,0.9646,138.9041,id_7007
+test_aug_0034.jpg,ground truth,0,id_2336,found,0.9665,,164.9272,
+test_aug_0034.jpg,ground truth,1,id_4422,found,0.9548,,171.8559,
+test_aug_0034.jpg,prediction,0,id_4422,TP,0.9548,0.9695,172.5885,id_4422
+test_aug_0034.jpg,prediction,1,id_2336,TP,0.9665,0.9523,167.3092,id_2336
+test_aug_0035.jpg,ground truth,0,id_2970,found,0.9592,,216.3046,
+test_aug_0035.jpg,prediction,0,id_2970,TP,0.9592,0.9408,215.8133,id_2970
+test_aug_0036.jpg,ground truth,0,id_7007,found,0.963,,136.9998,
+test_aug_0036.jpg,ground truth,1,id_2970,found,0.9924,,115.0002,
+test_aug_0036.jpg,ground truth,2,id_2336,found,0.9828,,194.0,
+test_aug_0036.jpg,prediction,0,id_2336,TP,0.9828,0.9867,191.9169,id_2336
+test_aug_0036.jpg,prediction,1,id_2970,TP,0.9924,0.9787,115.5844,id_2970
+test_aug_0036.jpg,prediction,2,id_7007,TP,0.963,0.9314,139.235,id_7007
+test_aug_0037.jpg,ground truth,0,id_2336,found,0.976,,104.9999,
+test_aug_0037.jpg,ground truth,1,id_2970,found,0.9811,,99.9999,
+test_aug_0037.jpg,prediction,0,id_2970,TP,0.9811,0.9841,99.7312,id_2970
+test_aug_0037.jpg,prediction,1,id_2336,TP,0.976,0.9506,105.927,id_2336
+test_aug_0038.jpg,ground truth,0,id_2336,found,0.8884,,112.7556,
+test_aug_0038.jpg,ground truth,1,id_7007,found,0.9183,,190.3347,
+test_aug_0038.jpg,ground truth,2,id_2970,missed,0.0,,113.152,
+test_aug_0038.jpg,ground truth,3,id_4422,found,0.8931,,119.5222,
+test_aug_0038.jpg,prediction,0,id_2336,TP,0.8884,0.9584,105.5829,id_2336
+test_aug_0038.jpg,prediction,1,id_4422,TP,0.8931,0.9052,111.8786,id_4422
+test_aug_0038.jpg,prediction,2,id_7007,TP,0.9183,0.812,187.4474,id_7007
+test_aug_0039.jpg,ground truth,0,id_7007,found,0.9486,,186.3171,
+test_aug_0039.jpg,ground truth,1,id_2970,confused,0.862,,219.4861,
+test_aug_0039.jpg,ground truth,2,id_2336,found,0.9253,,130.7277,
+test_aug_0039.jpg,ground truth,3,id_4422,found,0.907,,161.7156,
+test_aug_0039.jpg,prediction,0,id_7007,TP,0.9486,0.9446,182.7267,id_7007
+test_aug_0039.jpg,prediction,1,id_4422,wrong_identity,0.862,0.9291,209.1718,id_2970
+test_aug_0039.jpg,prediction,2,id_4422,TP,0.907,0.9146,168.453,id_4422
+test_aug_0039.jpg,prediction,3,id_2336,TP,0.9253,0.8812,125.1865,id_2336
+test_aug_0040.jpg,ground truth,0,id_4422,found,0.9903,,211.0005,
+test_aug_0040.jpg,ground truth,1,id_7007,found,0.984,,149.0004,
+test_aug_0040.jpg,ground truth,2,id_2336,found,0.9766,,109.9998,
+test_aug_0040.jpg,prediction,0,id_7007,TP,0.984,0.9787,149.839,id_7007
+test_aug_0040.jpg,prediction,1,id_2336,TP,0.9766,0.974,108.7923,id_2336
+test_aug_0040.jpg,prediction,2,id_4422,TP,0.9903,0.9656,211.2597,id_4422
+test_aug_0041.jpg,ground truth,0,id_2970,found,0.9857,,153.9999,
+test_aug_0041.jpg,ground truth,1,id_2336,found,0.9726,,170.0001,
+test_aug_0041.jpg,prediction,0,id_2336,TP,0.9726,0.9816,170.2789,id_2336
+test_aug_0041.jpg,prediction,1,id_2970,TP,0.9857,0.972,152.8762,id_2970
+test_aug_0042.jpg,ground truth,0,id_2336,found,0.9912,,181.0004,
+test_aug_0042.jpg,ground truth,1,id_2970,found,0.9889,,191.0003,
+test_aug_0042.jpg,prediction,0,id_2336,TP,0.9912,0.9753,181.0564,id_2336
+test_aug_0042.jpg,prediction,1,id_2970,TP,0.9889,0.9623,190.4622,id_2970
+test_aug_0043.jpg,ground truth,0,id_4422,found,0.9499,,141.9998,
+test_aug_0043.jpg,ground truth,1,id_2336,found,0.9429,,203.9998,
+test_aug_0043.jpg,prediction,0,id_4422,TP,0.9499,0.9693,141.6635,id_4422
+test_aug_0043.jpg,prediction,1,id_2336,TP,0.9429,0.9688,212.2825,id_2336
+test_aug_0044.jpg,ground truth,0,id_2970,found,0.9806,,245.4714,
+test_aug_0044.jpg,ground truth,1,id_2336,found,0.9574,,126.7006,
+test_aug_0044.jpg,ground truth,2,id_7007,found,0.9155,,133.025,
+test_aug_0044.jpg,ground truth,3,id_4422,found,0.9404,,145.7807,
+test_aug_0044.jpg,prediction,0,id_7007,TP,0.9155,0.9517,129.369,id_7007
+test_aug_0044.jpg,prediction,1,id_2336,TP,0.9574,0.9516,126.3807,id_2336
+test_aug_0044.jpg,prediction,2,id_4422,TP,0.9404,0.9327,143.4237,id_4422
+test_aug_0044.jpg,prediction,3,id_2970,TP,0.9806,0.8435,246.6838,id_2970
+test_aug_0045.jpg,ground truth,0,id_4422,found,0.9225,,149.8401,
+test_aug_0045.jpg,ground truth,1,id_2336,missed,0.0,,56.8557,
+test_aug_0045.jpg,ground truth,2,id_7007,found,0.929,,217.7932,
+test_aug_0045.jpg,prediction,0,id_4422,TP,0.9225,0.9598,143.79,id_4422
+test_aug_0045.jpg,prediction,1,id_7007,TP,0.929,0.9311,217.0905,id_7007
+test_aug_0046.jpg,ground truth,0,id_2336,found,0.96,,206.6567,
+test_aug_0046.jpg,ground truth,1,id_7007,missed,0.0,,204.1749,
+test_aug_0046.jpg,prediction,0,id_2336,TP,0.96,0.9457,211.1809,id_2336
+test_aug_0047.jpg,ground truth,0,id_4422,found,0.9749,,185.4959,
+test_aug_0047.jpg,ground truth,1,id_2336,found,0.9481,,169.0214,
+test_aug_0047.jpg,prediction,0,id_2336,TP,0.9481,0.9612,163.3237,id_2336
+test_aug_0047.jpg,prediction,1,id_4422,TP,0.9749,0.9542,182.6788,id_4422
+test_aug_0048.jpg,ground truth,0,id_2970,found,0.9617,,103.9986,
+test_aug_0048.jpg,ground truth,1,id_2336,found,0.8974,,172.0746,
+test_aug_0048.jpg,ground truth,2,id_4422,found,0.9647,,158.1345,
+test_aug_0048.jpg,prediction,0,id_4422,TP,0.9647,0.969,155.3603,id_4422
+test_aug_0048.jpg,prediction,1,id_2970,TP,0.9617,0.9594,105.3197,id_2970
+test_aug_0048.jpg,prediction,2,id_2336,TP,0.8974,0.9572,169.396,id_2336
+test_aug_0049.jpg,ground truth,0,id_2336,found,0.9798,,192.0002,
+test_aug_0049.jpg,ground truth,1,id_2970,found,0.9724,,90.0,
+test_aug_0049.jpg,ground truth,2,id_7007,found,0.983,,99.9999,
+test_aug_0049.jpg,prediction,0,id_2970,TP,0.9724,0.9865,90.2659,id_2970
+test_aug_0049.jpg,prediction,1,id_2336,TP,0.9798,0.9829,190.3444,id_2336
+test_aug_0049.jpg,prediction,2,id_7007,TP,0.983,0.9811,101.367,id_7007
+test_aug_0050.jpg,ground truth,0,id_4422,found,0.9369,,115.9456,
+test_aug_0050.jpg,ground truth,1,id_2336,missed,0.0,,98.9528,
+test_aug_0050.jpg,ground truth,2,id_2970,found,0.9634,,173.4251,
+test_aug_0050.jpg,prediction,0,id_2970,TP,0.9634,0.9611,169.1227,id_2970
+test_aug_0050.jpg,prediction,1,id_4422,TP,0.9369,0.9373,113.5906,id_4422
+test_aug_0051.jpg,ground truth,0,id_7007,found,0.9654,,214.0002,
+test_aug_0051.jpg,ground truth,1,id_2336,found,0.9146,,178.0002,
+test_aug_0051.jpg,ground truth,2,id_2970,found,0.904,,136.9998,
+test_aug_0051.jpg,ground truth,3,id_4422,found,0.9412,,144.0,
+test_aug_0051.jpg,prediction,0,id_2970,TP,0.904,0.9743,127.1138,id_2970
+test_aug_0051.jpg,prediction,1,id_2336,TP,0.9146,0.9712,184.4819,id_2336
+test_aug_0051.jpg,prediction,2,id_4422,TP,0.9412,0.9691,149.7016,id_4422
+test_aug_0051.jpg,prediction,3,id_7007,TP,0.9654,0.9675,211.2428,id_7007
+test_aug_0052.jpg,ground truth,0,id_4422,found,0.9887,,202.0,
+test_aug_0052.jpg,ground truth,1,id_7007,found,0.9897,,137.0002,
+test_aug_0052.jpg,prediction,0,id_7007,TP,0.9897,0.9857,136.9127,id_7007
+test_aug_0052.jpg,prediction,1,id_4422,TP,0.9887,0.9561,202.612,id_4422
+test_aug_0053.jpg,ground truth,0,id_7007,found,0.9732,,203.2853,
+test_aug_0053.jpg,ground truth,1,id_2970,found,0.9795,,134.3434,
+test_aug_0053.jpg,prediction,0,id_2970,TP,0.9795,0.9862,133.095,id_2970
+test_aug_0053.jpg,prediction,1,id_7007,TP,0.9732,0.9723,204.3217,id_7007
+test_aug_0054.jpg,ground truth,0,id_2336,found,0.9569,,109.9998,
+test_aug_0054.jpg,ground truth,1,id_7007,found,0.9955,,144.9999,
+test_aug_0054.jpg,prediction,0,id_2336,TP,0.9569,0.9508,106.4071,id_2336
+test_aug_0054.jpg,prediction,1,id_7007,TP,0.9955,0.888,145.3342,id_7007
+test_aug_0055.jpg,ground truth,0,id_2336,found,0.9863,,140.9998,
+test_aug_0055.jpg,ground truth,1,id_4422,found,0.9725,,188.0001,
+test_aug_0055.jpg,prediction,0,id_2336,TP,0.9863,0.9804,140.1324,id_2336
+test_aug_0055.jpg,prediction,1,id_4422,TP,0.9725,0.9732,192.0961,id_4422
+test_aug_0056.jpg,ground truth,0,id_7007,missed,0.0,,94.0001,
+test_aug_0056.jpg,ground truth,1,id_2970,found,0.9209,,174.9996,
+test_aug_0056.jpg,ground truth,2,id_4422,found,0.9835,,108.0,
+test_aug_0056.jpg,ground truth,3,id_2336,missed,0.0,,181.0004,
+test_aug_0056.jpg,prediction,0,id_4422,TP,0.9835,0.9668,108.0015,id_4422
+test_aug_0056.jpg,prediction,1,id_2970,TP,0.9209,0.9462,177.7753,id_2970
+test_aug_0057.jpg,ground truth,0,id_2336,found,0.9928,,103.0005,
+test_aug_0057.jpg,ground truth,1,id_7007,found,0.9784,,140.9998,
+test_aug_0057.jpg,prediction,0,id_2336,TP,0.9928,0.9863,102.6569,id_2336
+test_aug_0057.jpg,prediction,1,id_7007,TP,0.9784,0.9737,141.4687,id_7007
+test_aug_0058.jpg,ground truth,0,id_2336,found,0.9603,,153.2916,
+test_aug_0058.jpg,ground truth,1,id_4422,found,0.9415,,214.2684,
+test_aug_0058.jpg,prediction,0,id_2336,TP,0.9603,0.9513,152.4256,id_2336
+test_aug_0058.jpg,prediction,1,id_4422,TP,0.9415,0.946,216.3926,id_4422
+test_aug_0059.jpg,ground truth,0,id_2336,found,0.9722,,208.9998,
+test_aug_0059.jpg,ground truth,1,id_7007,found,0.9904,,148.0,
+test_aug_0059.jpg,ground truth,2,id_2970,found,0.9733,,64.9998,
+test_aug_0059.jpg,prediction,0,id_7007,TP,0.9904,0.9771,148.3883,id_7007
+test_aug_0059.jpg,prediction,1,id_2336,TP,0.9722,0.9765,208.174,id_2336
+test_aug_0059.jpg,prediction,2,id_2970,TP,0.9733,0.8331,65.6869,id_2970
+test_aug_0060.jpg,ground truth,0,id_4422,found,0.9427,,228.6698,
+test_aug_0060.jpg,ground truth,1,id_2970,found,0.9293,,145.8846,
+test_aug_0060.jpg,prediction,0,id_4422,TP,0.9427,0.9493,225.9214,id_4422
+test_aug_0060.jpg,prediction,1,id_2970,TP,0.9293,0.9225,139.4084,id_2970
+test_aug_0061.jpg,ground truth,0,id_2970,found,0.9458,,163.9998,
+test_aug_0061.jpg,ground truth,1,id_2336,found,0.9764,,131.0,
+test_aug_0061.jpg,ground truth,2,id_4422,found,0.9829,,99.9999,
+test_aug_0061.jpg,prediction,0,id_2336,TP,0.9764,0.9532,131.9737,id_2336
+test_aug_0061.jpg,prediction,1,id_4422,TP,0.9829,0.9473,99.3508,id_4422
+test_aug_0061.jpg,prediction,2,id_2970,TP,0.9458,0.9469,165.4692,id_2970
+test_aug_0062.jpg,ground truth,0,id_7007,found,0.9899,,158.0,
+test_aug_0062.jpg,ground truth,1,id_2970,confused,0.9906,,206.9996,
+test_aug_0062.jpg,prediction,0,id_7007,TP,0.9899,0.9791,158.5267,id_7007
+test_aug_0062.jpg,prediction,1,id_4422,wrong_identity,0.9906,0.8698,205.6,id_2970
+test_aug_0063.jpg,ground truth,0,id_2970,found,0.9613,,197.0001,
+test_aug_0063.jpg,ground truth,1,id_7007,found,0.9593,,205.0002,
+test_aug_0063.jpg,prediction,0,id_7007,TP,0.9593,0.9786,205.4235,id_7007
+test_aug_0063.jpg,prediction,1,id_2970,TP,0.9613,0.9566,199.5465,id_2970
+test_aug_0064.jpg,ground truth,0,id_4422,missed,0.0,,184.0001,
+test_aug_0064.jpg,ground truth,1,id_7007,found,0.9519,,176.0,
+test_aug_0064.jpg,prediction,0,id_7007,TP,0.9519,0.9748,179.1711,id_7007
+test_aug_0065.jpg,ground truth,0,id_7007,found,0.9965,,176.9998,
+test_aug_0065.jpg,ground truth,1,id_2970,found,0.9209,,152.0001,
+test_aug_0065.jpg,prediction,0,id_7007,TP,0.9965,0.9759,176.6433,id_7007
+test_aug_0065.jpg,prediction,1,id_2970,TP,0.9209,0.8481,144.7974,id_2970
+test_aug_0066.jpg,ground truth,0,id_7007,found,0.9399,,249.9773,
+test_aug_0066.jpg,ground truth,1,id_2970,found,0.9931,,194.9647,
+test_aug_0066.jpg,ground truth,2,id_2336,found,0.955,,167.8311,
+test_aug_0066.jpg,prediction,0,id_2336,TP,0.955,0.9694,171.3459,id_2336
+test_aug_0066.jpg,prediction,1,id_7007,TP,0.9399,0.8958,250.1115,id_7007
+test_aug_0066.jpg,prediction,2,id_2970,TP,0.9931,0.8865,194.87,id_2970
+test_aug_0067.jpg,ground truth,0,id_2336,found,0.9893,,183.4376,
+test_aug_0067.jpg,prediction,0,id_2336,TP,0.9893,0.9589,181.8731,id_2336
+test_aug_0068.jpg,ground truth,0,id_4422,found,0.9694,,103.0,
+test_aug_0068.jpg,ground truth,1,id_2970,found,0.9474,,108.0,
+test_aug_0068.jpg,ground truth,2,id_2336,found,0.9681,,196.0002,
+test_aug_0068.jpg,ground truth,3,id_7007,found,0.9128,,135.0,
+test_aug_0068.jpg,prediction,0,id_2970,TP,0.9474,0.9778,110.0846,id_2970
+test_aug_0068.jpg,prediction,1,id_2336,TP,0.9681,0.973,197.0329,id_2336
+test_aug_0068.jpg,prediction,2,id_7007,TP,0.9128,0.9726,138.2717,id_7007
+test_aug_0068.jpg,prediction,3,id_4422,TP,0.9694,0.9568,103.4834,id_4422
+test_aug_0069.jpg,ground truth,0,id_2970,found,0.9572,,180.9522,
+test_aug_0069.jpg,ground truth,1,id_4422,found,0.9796,,94.446,
+test_aug_0069.jpg,ground truth,2,id_7007,found,0.8874,,169.3211,
+test_aug_0069.jpg,prediction,0,id_7007,TP,0.8874,0.9716,178.988,id_7007
+test_aug_0069.jpg,prediction,1,id_4422,TP,0.9796,0.96,95.0372,id_4422
+test_aug_0069.jpg,prediction,2,id_2970,TP,0.9572,0.9584,182.6452,id_2970
+test_aug_0070.jpg,ground truth,0,id_4422,found,0.9659,,246.8038,
+test_aug_0070.jpg,ground truth,1,id_2970,found,0.955,,214.7855,
+test_aug_0070.jpg,ground truth,2,id_2336,missed,0.0,,108.234,
+test_aug_0070.jpg,prediction,0,id_4422,TP,0.9659,0.954,242.2347,id_4422
+test_aug_0070.jpg,prediction,1,id_2970,TP,0.955,0.9384,213.3158,id_2970
+test_aug_0071.jpg,ground truth,0,id_7007,missed,0.0,,104.1755,
+test_aug_0071.jpg,ground truth,1,id_2336,found,0.9551,,91.3136,
+test_aug_0071.jpg,prediction,0,id_2336,TP,0.9551,0.968,92.1492,id_2336
+test_aug_0072.jpg,ground truth,0,id_2336,found,0.9141,,145.2884,
+test_aug_0072.jpg,ground truth,1,id_2970,found,0.948,,178.6599,
+test_aug_0072.jpg,ground truth,2,id_7007,found,0.8949,,182.2293,
+test_aug_0072.jpg,prediction,0,id_2970,TP,0.948,0.9683,175.3273,id_2970
+test_aug_0072.jpg,prediction,1,id_2336,TP,0.9141,0.9603,151.7101,id_2336
+test_aug_0072.jpg,prediction,2,id_7007,TP,0.8949,0.9064,192.0005,id_7007
+test_aug_0073.jpg,ground truth,0,id_4422,found,0.9836,,104.0,
+test_aug_0073.jpg,ground truth,1,id_7007,found,0.9926,,198.0,
+test_aug_0073.jpg,prediction,0,id_4422,TP,0.9836,0.9763,104.9958,id_4422
+test_aug_0073.jpg,prediction,1,id_7007,TP,0.9926,0.9749,197.0267,id_7007
+test_aug_0074.jpg,ground truth,0,id_7007,missed,0.0,,145.7761,
+test_aug_0074.jpg,ground truth,1,id_4422,found,0.885,,194.6835,
+test_aug_0074.jpg,prediction,0,id_4422,TP,0.885,0.9436,188.4658,id_4422
+test_aug_0075.jpg,ground truth,0,id_7007,found,0.9616,,196.3593,
+test_aug_0075.jpg,ground truth,1,id_4422,found,0.9417,,204.3153,
+test_aug_0075.jpg,prediction,0,id_7007,TP,0.9616,0.9723,196.1914,id_7007
+test_aug_0075.jpg,prediction,1,id_4422,TP,0.9417,0.9415,203.6854,id_4422
+test_aug_0076.jpg,ground truth,0,id_7007,found,0.9513,,99.6988,
+test_aug_0076.jpg,ground truth,1,id_4422,found,0.9486,,172.1506,
+test_aug_0076.jpg,prediction,0,id_4422,TP,0.9486,0.979,172.8528,id_4422
+test_aug_0076.jpg,prediction,1,id_7007,TP,0.9513,0.8143,101.3582,id_7007
+test_aug_0077.jpg,ground truth,0,id_4422,confused,0.9558,,109.9998,
+test_aug_0077.jpg,ground truth,1,id_2336,found,0.9529,,162.0,
+test_aug_0077.jpg,ground truth,2,id_2970,confused,0.9644,,133.0002,
+test_aug_0077.jpg,prediction,0,id_2336,TP,0.9529,0.9771,162.3255,id_2336
+test_aug_0077.jpg,prediction,1,id_4422,wrong_identity,0.9644,0.9237,135.2957,id_2970
+test_aug_0077.jpg,prediction,2,id_2970,wrong_identity,0.9558,0.8886,113.4363,id_4422
+test_aug_0078.jpg,ground truth,0,id_4422,found,0.9712,,217.2038,
+test_aug_0078.jpg,ground truth,1,id_2336,found,0.9493,,199.2065,
+test_aug_0078.jpg,ground truth,2,id_2970,found,0.949,,174.9731,
+test_aug_0078.jpg,prediction,0,id_2336,TP,0.9493,0.9804,195.6603,id_2336
+test_aug_0078.jpg,prediction,1,id_4422,TP,0.9712,0.9591,216.925,id_4422
+test_aug_0078.jpg,prediction,2,id_2970,TP,0.949,0.9419,174.421,id_2970
+test_aug_0079.jpg,ground truth,0,id_7007,found,0.9699,,146.0003,
+test_aug_0079.jpg,ground truth,1,id_2970,found,0.9774,,90.9999,
+test_aug_0079.jpg,ground truth,2,id_2336,found,0.9734,,181.0003,
+test_aug_0079.jpg,prediction,0,id_2336,TP,0.9734,0.9714,182.6775,id_2336
+test_aug_0079.jpg,prediction,1,id_7007,TP,0.9699,0.9593,146.3213,id_7007
+test_aug_0079.jpg,prediction,2,id_2970,TP,0.9774,0.8021,89.3294,id_2970
+test_aug_0080.jpg,ground truth,0,id_7007,found,0.8469,,203.9998,
+test_aug_0080.jpg,ground truth,1,id_2336,found,0.9816,,192.0002,
+test_aug_0080.jpg,ground truth,2,id_4422,found,0.9766,,111.0001,
+test_aug_0080.jpg,prediction,0,id_2336,TP,0.9816,0.9766,190.0181,id_2336
+test_aug_0080.jpg,prediction,1,id_7007,TP,0.8469,0.9497,205.6193,id_7007
+test_aug_0080.jpg,prediction,2,id_4422,TP,0.9766,0.8263,112.0116,id_4422
+test_aug_0081.jpg,ground truth,0,id_2970,found,0.9895,,195.0732,
+test_aug_0081.jpg,prediction,0,id_2970,TP,0.9895,0.9569,195.1381,id_2970
+test_aug_0082.jpg,ground truth,0,id_2336,found,0.9173,,206.6958,
+test_aug_0082.jpg,ground truth,1,id_4422,found,0.9413,,196.7665,
+test_aug_0082.jpg,ground truth,2,id_7007,confused,0.9378,,102.4434,
+test_aug_0082.jpg,prediction,0,id_2336,TP,0.9173,0.9665,204.1854,id_2336
+test_aug_0082.jpg,prediction,1,id_4422,wrong_identity,0.9378,0.9611,107.9886,id_7007
+test_aug_0082.jpg,prediction,2,id_4422,TP,0.9413,0.9398,188.3714,id_4422
+test_aug_0083.jpg,ground truth,0,id_2336,found,0.9582,,241.3134,
+test_aug_0083.jpg,ground truth,1,id_4422,found,0.8778,,138.2378,
+test_aug_0083.jpg,prediction,0,id_2336,TP,0.9582,0.9494,245.2446,id_2336
+test_aug_0083.jpg,prediction,1,id_4422,TP,0.8778,0.9441,142.3306,id_4422
+test_aug_0084.jpg,ground truth,0,id_7007,found,0.9854,,130.0,
+test_aug_0084.jpg,ground truth,1,id_4422,found,0.9894,,183.0002,
+test_aug_0084.jpg,ground truth,2,id_2336,found,0.9823,,124.0002,
+test_aug_0084.jpg,prediction,0,id_4422,TP,0.9894,0.9821,182.112,id_4422
+test_aug_0084.jpg,prediction,1,id_7007,TP,0.9854,0.9796,129.24,id_7007
+test_aug_0084.jpg,prediction,2,id_2336,TP,0.9823,0.9777,123.8241,id_2336
+test_aug_0085.jpg,ground truth,0,id_4422,found,0.9814,,131.9999,
+test_aug_0085.jpg,ground truth,1,id_2970,found,0.9907,,176.0,
+test_aug_0085.jpg,ground truth,2,id_2336,found,0.9412,,148.0,
+test_aug_0085.jpg,prediction,0,id_2336,TP,0.9412,0.9779,147.3663,id_2336
+test_aug_0085.jpg,prediction,1,id_2970,TP,0.9907,0.9743,175.322,id_2970
+test_aug_0085.jpg,prediction,2,id_4422,TP,0.9814,0.9582,131.6841,id_4422
+test_aug_0086.jpg,ground truth,0,id_7007,missed,0.0,,135.3397,
+test_aug_0087.jpg,ground truth,0,id_2336,found,0.9602,,216.3816,
+test_aug_0087.jpg,ground truth,1,id_7007,missed,0.0,,124.6055,
+test_aug_0087.jpg,ground truth,2,id_2970,found,0.9867,,198.6133,
+test_aug_0087.jpg,prediction,0,id_2336,TP,0.9602,0.9606,213.8927,id_2336
+test_aug_0087.jpg,prediction,1,id_2970,TP,0.9867,0.9601,200.2072,id_2970
+test_aug_0088.jpg,ground truth,0,id_2336,found,0.9835,,203.4724,
+test_aug_0088.jpg,ground truth,1,id_7007,found,0.8942,,142.0092,
+test_aug_0088.jpg,prediction,0,id_7007,TP,0.8942,0.963,152.1494,id_7007
+test_aug_0088.jpg,prediction,1,id_2336,TP,0.9835,0.9586,205.8262,id_2336
+test_aug_0089.jpg,ground truth,0,id_2970,found,0.9549,,197.0001,
+test_aug_0089.jpg,ground truth,1,id_4422,found,0.9567,,113.0,
+test_aug_0089.jpg,prediction,0,id_2970,TP,0.9549,0.9599,198.422,id_2970
+test_aug_0089.jpg,prediction,1,id_4422,TP,0.9567,0.8891,112.2821,id_4422
+test_aug_0090.jpg,ground truth,0,id_7007,missed,0.0,,195.7068,
+test_aug_0090.jpg,ground truth,1,id_2970,found,0.934,,182.0173,
+test_aug_0090.jpg,prediction,0,id_2970,TP,0.934,0.9599,177.9554,id_2970
+test_aug_0091.jpg,ground truth,0,id_2336,found,0.9086,,153.8487,
+test_aug_0091.jpg,ground truth,1,id_4422,confused,0.9275,,211.1778,
+test_aug_0091.jpg,ground truth,2,id_2970,found,0.9232,,147.0425,
+test_aug_0091.jpg,prediction,0,id_2336,TP,0.9086,0.9649,162.6198,id_2336
+test_aug_0091.jpg,prediction,1,id_2970,TP,0.9232,0.941,142.0211,id_2970
+test_aug_0091.jpg,prediction,2,id_2336,wrong_identity,0.9275,0.926,213.7595,id_4422
+test_aug_0092.jpg,ground truth,0,id_4422,found,0.9253,,120.5788,
+test_aug_0092.jpg,ground truth,1,id_7007,found,0.9619,,218.7585,
+test_aug_0092.jpg,ground truth,2,id_2336,found,0.9233,,137.1771,
+test_aug_0092.jpg,ground truth,3,id_2970,confused,0.9258,,141.1331,
+test_aug_0092.jpg,prediction,0,id_2336,TP,0.9233,0.9674,131.0639,id_2336
+test_aug_0092.jpg,prediction,1,id_4422,wrong_identity,0.9258,0.95,135.1814,id_2970
+test_aug_0092.jpg,prediction,2,id_4422,TP,0.9253,0.9217,115.3367,id_4422
+test_aug_0092.jpg,prediction,3,id_7007,TP,0.9619,0.918,214.0973,id_7007
+test_aug_0093.jpg,ground truth,0,id_4422,found,0.9904,,208.9998,
+test_aug_0093.jpg,ground truth,1,id_2336,found,0.9842,,177.9998,
+test_aug_0093.jpg,prediction,0,id_2336,TP,0.9842,0.9743,178.2409,id_2336
+test_aug_0093.jpg,prediction,1,id_4422,TP,0.9904,0.9734,210.8241,id_4422
+test_aug_0094.jpg,ground truth,0,id_2336,found,0.9951,,123.0003,
+test_aug_0094.jpg,ground truth,1,id_7007,found,0.9873,,95.9999,
+test_aug_0094.jpg,prediction,0,id_7007,TP,0.9873,0.9778,96.2455,id_7007
+test_aug_0094.jpg,prediction,1,id_2336,TP,0.9951,0.9776,122.6205,id_2336
+test_aug_0095.jpg,ground truth,0,id_2336,found,0.8825,,140.9998,
+test_aug_0095.jpg,ground truth,1,id_2970,found,0.9879,,145.9998,
+test_aug_0095.jpg,prediction,0,id_2336,TP,0.8825,0.9687,145.3863,id_2336
+test_aug_0095.jpg,prediction,1,id_2970,TP,0.9879,0.9662,147.5072,id_2970
+test_aug_0096.jpg,ground truth,0,id_2970,found,0.9932,,102.0002,
+test_aug_0096.jpg,ground truth,1,id_4422,found,0.9901,,153.9999,
+test_aug_0096.jpg,prediction,0,id_4422,TP,0.9901,0.9842,153.1941,id_4422
+test_aug_0096.jpg,prediction,1,id_2970,TP,0.9932,0.9804,101.9557,id_2970
+test_aug_0097.jpg,ground truth,0,id_7007,found,0.9795,,197.0001,
+test_aug_0097.jpg,ground truth,1,id_2336,found,0.9592,,100.9998,
+test_aug_0097.jpg,prediction,0,id_7007,TP,0.9795,0.9899,195.5128,id_7007
+test_aug_0097.jpg,prediction,1,id_2336,TP,0.9592,0.9643,101.908,id_2336
+test_aug_0098.jpg,ground truth,0,id_2970,found,0.9407,,241.898,
+test_aug_0098.jpg,ground truth,1,id_2336,found,0.9617,,174.8102,
+test_aug_0098.jpg,prediction,0,id_2336,TP,0.9617,0.9804,172.8118,id_2336
+test_aug_0098.jpg,prediction,1,id_2970,TP,0.9407,0.9322,241.6652,id_2970
+test_aug_0099.jpg,ground truth,0,id_7007,found,0.9217,,164.2937,
+test_aug_0099.jpg,ground truth,1,id_2336,found,0.9183,,117.3605,
+test_aug_0099.jpg,prediction,0,id_2336,TP,0.9183,0.9622,116.3527,id_2336
+test_aug_0099.jpg,prediction,1,id_7007,TP,0.9217,0.8438,160.1197,id_7007
+test_aug_0100.jpg,ground truth,0,id_2336,found,0.9447,,247.5554,
+test_aug_0100.jpg,ground truth,1,id_4422,found,0.9492,,100.2911,
+test_aug_0100.jpg,ground truth,2,id_2970,found,0.9277,,163.7604,
+test_aug_0100.jpg,prediction,0,id_2970,TP,0.9277,0.9682,156.6706,id_2970
+test_aug_0100.jpg,prediction,1,id_4422,TP,0.9492,0.9631,97.9392,id_4422
+test_aug_0100.jpg,prediction,2,id_2336,TP,0.9447,0.9495,240.4453,id_2336
