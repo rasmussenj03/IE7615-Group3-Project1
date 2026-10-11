@@ -196,6 +196,63 @@ Run `milestone2/Data_Preparation.ipynb` from top to bottom. Task 1 (Part F) dele
 labels. JPEG pixels can differ very slightly between library versions. Task 3 only reads the dataset and can be run on
 its own.
 
+## Milestone 3: YOLOv8 Transfer Learning and Evaluation
+### Task 1: Fine-tune YOLOv8 Model
+We used Ultralytic's COCO-pretrained YOLOv8 model, and fine-tuned it to work with our saved dataset from Milestone 2. A training budget of 150 epochs was used, with early stopping at 30 epochs. Before testing, the batch size and thresholds were set. The batch size was set to 16, confidence was set to 0.25, class-aware NMS IoU was set at 0.70, and TP matching IoU was set at 0.50. Note that the NMS threshold used is different from the evaluation matching threshold.
+
+### Task 2: Detection Metrics on Held-Out Test Split
+For this task, we produced loss curves, per-class and overall AP/mAP, precision, recall and bounding-box IoU, plus CSV reports and checkpoints.
+
+To get the specific detection metrics for these fine-tuned models, held-out data was fed into the model for the test split, after the training protocol and checkpoint were finished. The AP integrates the precision–recall curve, using a low prediction confidence floor of 0.001 to retain the curve, not the fixed reporting threshold. Per-class values are **AP**; their average across the four identities is **mAP**. The test split is not used for checkpoint selection or threshold tuning.
+
+Ultralytics also returns precision and recall at its internally selected curve operating point. Those are saved separately for reference. The main combined report below uses predeclared confidence 0.25 instead, making its precision/recall and matched IoU directly interpretable together. 
+
+### Task 3: Hyperparameter Sweep
+For the hyperparameter sweep, we used five of the hyperparameters named in the assignment were covered, over the course of two parts. 
+| Part | Hyperparameters | Needs retraining | Selected on |
+|---|---|---|---|
+| A. Training sweep | learning rate, image size, augmentation intensity | yes, 1 run per configuration | validation mAP@0.5:0.95 |
+| B. Inference sweep | confidence threshold, NMS IoU threshold (class-aware and class-agnostic NMS) | no, the selected model is re-run on cached predictions | validation F1 |
+
+For the training sweep, each run had a different parameter changed, for a total of 7 runs. Additionally, each training was over the course of 30 epochs, with an early stop at 10 epochs. This is noticeably less than the epochs used in Task 1, but as the cosine schedule is stretched, the learning rate still decays fully. Ultimately, the configuration with the highest **validation**, mAP@0.5:0.95, was selected.
+
+The results of the training sweep can be found in the `results/milestone3/sweep/` folder, with the parameters for the best model of the sweep stored in `best_model.pt`. This is also what was used for Tasks 4 and 5.
+
+For the inference sweep, the model parameters stayed the same, but which boxes were ultimately kept were explored. Two different thresholds were explored: confidenceand NMS IoU, in addition to a comparison of class-aware or class-agnostic NMS.
+
+### Task 4: Detection Visualization Gallery
+For the detection visualization gallery, the predictions of the fine-tuned YOLOv8 model are rendered, for the held-out **test** split.
+
+* **Model and thresholds:** the checkpoint and operating point selected on the validation split by the hyperparameter sweep (`results/milestone3/sweep/best_model.pt` and `operating_point.json`, Task 3).
+* **Error analysis:** every test prediction and every ground-truth face is labelled with the Task 2 matching protocol (same identity, IoU >= 0.5) and an error reason, see `src/detection_eval.py`:
+
+| Outcome | Meaning |
+|---|---|
+| correct | box on the face with the right identity (IoU >= 0.5) |
+| wrong identity | box on a face (IoU >= 0.5, or >= 0.3 if the identity is wrong) but with another person's name |
+| duplicate | second box on a face that was already found |
+| poor localization | right identity, but the box overlaps the face with IoU < 0.5 |
+| background | box on no face at all |
+| missed face | no box anywhere near a labelled face |
+
+The gallery outputs can be found in the `results/milestone3/gallery/` folder. There is one annotated JPEG per example, with a `README.md` serving as the gallery with captions.
+
+### Task 5: Live Demo
+The live demo runs the fine-tuned YOLOv8n celebrity detector on held-out test images or on an image you provide.
+
+* **Model and thresholds:** the checkpoint and operating point selected on the validation split by the
+  hyperparameter sweep (`results/milestone3/sweep/best_model.pt` and `operating_point.json`, Task 3).
+* **Part A** draws the detections on test images inside the notebook (no extra packages).
+* **Part B** opens an interactive app in the notebook: upload an image or click a test example, and change the
+  confidence threshold with a slider.
+
+Each face is boxed in its identity color and labelled with the predicted identity and confidence.
+
+### Reproducing the reported metrics
+To reproduce the reported metrics, please run Task 1 and 2's `milestone3/Milestone3_YOLOv8_Training_Evaluation.ipynb` from top to bottom. You should see the detection metrics under **7. Compare identities and save a concise run report**. The trained YOLOv8 weights can be reproduced with this script as well. Then, please run `milestone3/Hyperparameter_Sweep.ipynb` to reproduce the hyperparameter sweep of Task 3, and `milestone3\Detection_Gallery.ipynb` to see the visualized detection gallery of Task 4. Lastly, to run the demo, please refer to the live demo located at `milestone3\Live_Demo.ipynb`. This should be run from top to bottom, excluding the last cell. The second-to-last cell runs the app locally, and here you will be able to see the model identify faces, from the image of your choice, in real-time. Once you have finished using the app, please run the very last cell, to close it. 
+
+You can find the best parameters for the YOLOv8, from the parameter sweep, in `results/milestone3/sweep/best_model.pt`.
+
 ---
 
 ## Data sources
