@@ -7,3 +7,7 @@ pillow
 scikit-learn
 pyyaml
 albumentations>=2.0
+ultralytics>=8.3,<9
+gradio>=4.44
+huggingface_hub<1.0; python_version<"3.10"
+pydantic<2.11; python_version<"3.10"
