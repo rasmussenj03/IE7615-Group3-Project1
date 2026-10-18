@@ -217,12 +217,18 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Project 1: model checkpoints are large and fully reproducible from the notebooks
-checkpoints/
-*.pt
+# Project 1: model checkpoints are large and reproducible from the notebooks...
 *.pth
-# ...except the Milestone 3 checkpoint selected by the sweep (~6 MB), used by the gallery and the demo
+# ...except the three the integrated pipeline needs: the Milestone 3 detector (~6 MB), the Milestone 1
+# EfficientNet-B0 (~16 MB) and its Milestone 4 adaptation to detector crops (~16 MB)
 !results/milestone3/sweep/best_model.pt
+!checkpoints/efficientnet_b0_ft.pt
+!checkpoints/efficientnet_b0_crops.pt
+
+# Output of `python -m src.pipeline` and files written by the Gradio demo
+results/milestone4/predictions/
+.gradio/
+flagged/
 
 # macOS system files
 .DS_Store

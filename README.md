@@ -1,53 +1,75 @@
 # IE7615-Group3-Project1
 
-Project 1 repository for Group 3 of IE7615: a discriminative computer-vision pipeline for celebrity identification and
-detection, built on a four-identity subset of [CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
+Project 1 repository for Group 3 of IE7615: a discriminative computer-vision pipeline that **detects and identifies
+celebrities** in an image, built on a four-identity subset of
+[CelebA](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset).
 
 | Milestone | Goal | Where |
 |---|---|---|
 | 1 | Classify single face crops: preprocessing pipeline, custom CNN vs. pretrained models | [`milestone1/`](milestone1) |
-| 2 | Build a synthetic multi-celebrity detection dataset with YOLO labels, augmentation and a leak-free split | [`milestone2/Data_Preparation.ipynb`](milestone2/Data_Preparation.ipynb) |
-| 3 | Fine-tune YOLOv8 on the Milestone 2 dataset (next) | `data/detection/data.yaml` |
+| 2 | Build a synthetic multi-celebrity detection dataset with YOLO labels, augmentation and a leak-free split | [`milestone2/`](milestone2) |
+| 3 | Fine-tune YOLOv8n on that dataset, evaluate it, sweep hyperparameters, gallery and live demo | [`milestone3/`](milestone3) |
+| 4 | Integrate detector and classifier into one end-to-end pipeline, final evaluation, gallery and demo | [`milestone4/`](milestone4), [`src/pipeline.py`](src/pipeline.py) |
 
 ## Repository layout
 
 ```
+requirements.txt                   Python packages (see Setup)
 data/
   celeba/<identity>/*.jpg          99 CelebA aligned & cropped faces (178 x 218), the raw input
-  splits.csv                       per-identity train / val / test split of those photos (used by both milestones)
+  splits.csv                       per-identity train / val / test split of those photos (used by every milestone)
   backgrounds/{train,val,test}/    30 room photos for the synthetic images, sources and licenses in SOURCES.md
   detection/                       Milestone 2 YOLO dataset: images/, labels/, data.yaml
-milestone1/
-  Preprocessing_Pipeline.ipynb     subset, validation, split, transforms, DataLoaders
-  CNN_1.ipynb                      architecture 1: custom CNN from scratch
-  Transfer_Learning_1.ipynb        architecture 2: ResNet-18 fine-tuned (transfer-learning baseline)
-  Transfer_Learning_2.ipynb        ResNet-18 fine-tuned with the training protocol shared with CNN_1 / CNN_2
-  CNN_2.ipynb                      architecture 3: EfficientNet-B0 fine-tuned
-milestone2/
-  Data_Preparation.ipynb           Task 1 composition + labels, Task 2 augmentation, Task 3 verification
 src/
-  preprocessing.py                 Milestone 1 data indexing, split, transforms and DataLoaders (paths shared with M2)
+  preprocessing.py                 Milestone 1 data indexing, split, transforms and DataLoaders (paths shared by all)
   synthesize.py                    Milestone 2 face trimming, image composition and YOLO label writing
+  detection_eval.py                Milestone 3 matching protocol, metrics, error analysis and drawing
+  pipeline.py                      Milestone 4 integrated pipeline (detector + classifier), also a command-line tool
+  adapt_classifier.py              Milestone 4 fine-tuning of the Milestone 1 classifier on face crops
+milestone1/                        Preprocessing_Pipeline, CNN_1, Transfer_Learning_1, Transfer_Learning_2, CNN_2
+milestone2/Data_Preparation.ipynb  composition + labels, augmentation, verification
+milestone3/                        YOLOv8 training/evaluation, hyperparameter sweep, detection gallery, live demo
+milestone4/
+  Integrated_Pipeline.ipynb        classifier adaptation, settings chosen on val, test results
+  Final_Gallery.ipynb              final results gallery
+  Live_Demo.ipynb                  live demo of the integrated pipeline
+checkpoints/
+  efficientnet_b0_ft.pt            Milestone 1 classifier (CNN_2), 16 MB
+  efficientnet_b0_crops.pt         the same model fine-tuned on face crops (Milestone 4), used by the pipeline, 16 MB
 results/
-  milestone1/                      training logs, metrics and figures of the classifiers
-  milestone2/                      figures of the dataset construction (verification reports are written to verification/)
+  milestone1/ milestone2/          logs, metrics and figures of each milestone
+  milestone3/sweep/best_model.pt   YOLOv8n detector selected by the sweep (Milestone 3), used by the pipeline, 6 MB
+  milestone4/                      pipeline_settings.json, result tables (CSV) and gallery/
 ```
 
 ## Setup
 
-**Google Colab (recommended).** Put the repo in Google Drive at `MyDrive/IE7615-Group3-Project1`, or let the first cell
-of any notebook clone it (this needs a GitHub personal access token saved as a Colab secret named `GITHUB_TOKEN`). Open
-a notebook, select a GPU runtime for the Milestone 1 training notebooks (CPU is enough for Milestone 2) and run all
-cells. The first cell mounts Drive and changes into the repo.
-
-**Local.**
+**Python.** 3.9 or newer (tested on 3.9 and 3.10). Everything runs on a CPU; an NVIDIA GPU is used automatically
 
 ```bash
-pip install -r requirements.txt
-jupyter lab
+git clone https://github.com/rasmussenj03/IE7615-Group3-Project1.git
+cd IE7615-Group3-Project1
+python3 -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install --upgrade pip && pip install -r requirements.txt
 ```
 
-Every notebook starts with the same setup cell, which finds the repo root, so notebooks can be run from any folder.
+## Reproducing the reported numbers
+
+Run the notebooks from top to bottom in this order. Each step reads only what the previous steps saved, and every
+committed result can be regenerated.
+
+| Step | Notebook / command | Produces | Approx. time (CPU) |
+|---|---|---|---|
+| 1 | `milestone1/Preprocessing_Pipeline.ipynb` | `data/splits.csv` | < 1 min |
+| 2 | `milestone1/CNN_1`, `Transfer_Learning_1`, `Transfer_Learning_2`, `CNN_2` | `results/milestone1/*`, `checkpoints/*.pt` | GPU recommended |
+| 3 | `milestone2/Data_Preparation.ipynb` | `data/detection/`, `results/milestone2/` | few min |
+| 4 | `milestone3/Milestone3_YOLOv8_Training_Evaluation.ipynb` | `results/milestone3/<run>/` | hours on CPU, GPU recommended |
+| 5 | `milestone3/Hyperparameter_Sweep.ipynb` | `results/milestone3/sweep/` incl. `best_model.pt` | hours on CPU, GPU recommended |
+| 6 | `milestone3/Detection_Gallery.ipynb` | `results/milestone3/gallery/` | few min |
+| 7 | `milestone4/Integrated_Pipeline.ipynb` | `checkpoints/efficientnet_b0_crops.pt`, `results/milestone4/` | ~5 min (+ 5-15 min to train the classifier) |
+| 8 | `milestone4/Final_Gallery.ipynb` | `results/milestone4/gallery/` | ~2 min |
+
+To check the final results only, steps 8 and 9 are enough: they use the committed checkpoints.
 
 ---
 
@@ -95,8 +117,9 @@ Held-out test split (20 images, 5 per identity), mean ± sd over 3 seeds, as rep
   protocol shared with `CNN_1` and `CNN_2` (cosine LR schedule, label smoothing 0.1, early stopping), so those three
   are directly comparable.
 
-Per-notebook logs and figures are in `results/milestone1/` (`custom_cnn/`, `resnet18/`; `CNN_2` and
-`Transfer_Learning_2` write theirs when run). Trained weights are not committed (`*.pt` is git-ignored) and are
+Logs and figures of `CNN_1` and `Transfer_Learning_1` are in `results/milestone1/` (`custom_cnn/`, `resnet18/`); the
+results of `Transfer_Learning_2` and `CNN_2` are shown in the saved notebook outputs. Of the trained weights only
+`checkpoints/efficientnet_b0_ft.pt` (`CNN_2`) is committed, because Milestone 4 builds on it; the others are
 recreated by the notebooks.
 
 ---
@@ -174,7 +197,7 @@ Augmented images are 450 x 450 and originals 640 x 640; YOLOv8 resizes both to i
 
 ### Task 3: Verification
 
-Task 3 audits the saved files without modifying them and writes its reports to `results/milestone2/verification/`.
+Task 3 audits the saved files without modifying them; its results are shown in the notebook output.
 
 | Check | Result |
 |---|---|
@@ -196,19 +219,34 @@ Run `milestone2/Data_Preparation.ipynb` from top to bottom. Task 1 (Part F) dele
 labels. JPEG pixels can differ very slightly between library versions. Task 3 only reads the dataset and can be run on
 its own.
 
+---
+
 ## Milestone 3: YOLOv8 Transfer Learning and Evaluation
+
 ### Task 1: Fine-tune YOLOv8 Model
-We used Ultralytic's COCO-pretrained YOLOv8 model, and fine-tuned it to work with our saved dataset from Milestone 2. A training budget of 150 epochs was used, with early stopping at 30 epochs. Before testing, the batch size and thresholds were set. The batch size was set to 16, confidence was set to 0.25, class-aware NMS IoU was set at 0.70, and TP matching IoU was set at 0.50. Note that the NMS threshold used is different from the evaluation matching threshold.
+
+We used Ultralytics' COCO-pretrained YOLOv8 model, and fine-tuned it to work with our saved dataset from Milestone 2. A training budget of 150 epochs was used, with early stopping at 30 epochs. Before testing, the batch size and thresholds were set. The batch size was set to 16, confidence was set to 0.25, class-aware NMS IoU was set at 0.70, and TP matching IoU was set at 0.50. Note that the NMS threshold used is different from the evaluation matching threshold.
 
 ### Task 2: Detection Metrics on Held-Out Test Split
+
 For this task, we produced loss curves, per-class and overall AP/mAP, precision, recall and bounding-box IoU, plus CSV reports and checkpoints.
 
 To get the specific detection metrics for these fine-tuned models, held-out data was fed into the model for the test split, after the training protocol and checkpoint were finished. The AP integrates the precision–recall curve, using a low prediction confidence floor of 0.001 to retain the curve, not the fixed reporting threshold. Per-class values are **AP**; their average across the four identities is **mAP**. The test split is not used for checkpoint selection or threshold tuning.
 
 Ultralytics also returns precision and recall at its internally selected curve operating point. Those are saved separately for reference. The main combined report below uses predeclared confidence 0.25 instead, making its precision/recall and matched IoU directly interpretable together. 
 
+| Test split (200 images, 543 faces) | mAP@0.5 | mAP@0.5:0.95 | Precision | Recall | Mean matched IoU |
+|---|---|---|---|---|---|
+| All identities | 0.983 | 0.941 | 0.944 | 0.958 | 0.964 |
+
+Per-identity AP@0.5 ranges from 0.974 (`id_7007`) to 0.990 (`id_4422`). The loss curves and per-class tables are
+in the saved outputs of `Milestone3_YOLOv8_Training_Evaluation.ipynb`; running it again writes them to
+`results/milestone3/<run>/`.
+
 ### Task 3: Hyperparameter Sweep
-For the hyperparameter sweep, we used five of the hyperparameters named in the assignment were covered, over the course of two parts. 
+
+The hyperparameter sweep covers five of the hyperparameters named in the assignment, in two parts:
+
 | Part | Hyperparameters | Needs retraining | Selected on |
 |---|---|---|---|
 | A. Training sweep | learning rate, image size, augmentation intensity | yes, 1 run per configuration | validation mAP@0.5:0.95 |
@@ -218,9 +256,12 @@ For the training sweep, each run had a different parameter changed, for a total 
 
 The results of the training sweep can be found in the `results/milestone3/sweep/` folder, with the parameters for the best model of the sweep stored in `best_model.pt`. This is also what was used for Tasks 4 and 5.
 
-For the inference sweep, the model parameters stayed the same, but which boxes were ultimately kept were explored. Two different thresholds were explored: confidenceand NMS IoU, in addition to a comparison of class-aware or class-agnostic NMS.
+For the inference sweep, the model parameters stayed the same, but which boxes were ultimately kept were explored. Two different thresholds were explored: confidence and NMS IoU, in addition to a comparison of class-aware or class-agnostic NMS. 
+
+On the test split the selected model reaches precision 0.965, recall 0.919 and mean matched IoU 0.971 at that operating point (confidence 0.80, NMS IoU 0.70, class-aware NMS).
 
 ### Task 4: Detection Visualization Gallery
+
 For the detection visualization gallery, the predictions of the fine-tuned YOLOv8 model are rendered, for the held-out **test** split.
 
 * **Model and thresholds:** the checkpoint and operating point selected on the validation split by the hyperparameter sweep (`results/milestone3/sweep/best_model.pt` and `operating_point.json`, Task 3).
@@ -238,20 +279,97 @@ For the detection visualization gallery, the predictions of the fine-tuned YOLOv
 The gallery outputs can be found in the `results/milestone3/gallery/` folder. There is one annotated JPEG per example, with a `README.md` serving as the gallery with captions.
 
 ### Task 5: Live Demo
+
 The live demo runs the fine-tuned YOLOv8n celebrity detector on held-out test images or on an image you provide.
 
 * **Model and thresholds:** the checkpoint and operating point selected on the validation split by the
   hyperparameter sweep (`results/milestone3/sweep/best_model.pt` and `operating_point.json`, Task 3).
-* **Part A** draws the detections on test images inside the notebook (no extra packages).
-* **Part B** opens an interactive app in the notebook: upload an image or click a test example, and change the
-  confidence threshold with a slider.
+* The notebook loads the model, then opens a Gradio app: pick a test image, upload or drag and drop an image, or take a webcam photo, and change the confidence threshold with a slider. Run the last cell to stop the app.
 
 Each face is boxed in its identity color and labelled with the predicted identity and confidence.
 
 ### Reproducing the reported metrics
-To reproduce the reported metrics, please run Task 1 and 2's `milestone3/Milestone3_YOLOv8_Training_Evaluation.ipynb` from top to bottom. You should see the detection metrics under **7. Compare identities and save a concise run report**. The trained YOLOv8 weights can be reproduced with this script as well. Then, please run `milestone3/Hyperparameter_Sweep.ipynb` to reproduce the hyperparameter sweep of Task 3, and `milestone3\Detection_Gallery.ipynb` to see the visualized detection gallery of Task 4. Lastly, to run the demo, please refer to the live demo located at `milestone3\Live_Demo.ipynb`. This should be run from top to bottom, excluding the last cell. The second-to-last cell runs the app locally, and here you will be able to see the model identify faces, from the image of your choice, in real-time. Once you have finished using the app, please run the very last cell, to close it. 
 
-You can find the best parameters for the YOLOv8, from the parameter sweep, in `results/milestone3/sweep/best_model.pt`.
+To reproduce the reported metrics, please run Task 1 and 2's `milestone3/Milestone3_YOLOv8_Training_Evaluation.ipynb` from top to bottom. You should see the detection metrics under **7. Compare identities and save a concise run report**. The trained YOLOv8 weights can be reproduced with this script as well. Then, please run `milestone3/Hyperparameter_Sweep.ipynb` to reproduce the hyperparameter sweep of Task 3, and `milestone3/Detection_Gallery.ipynb` to see the visualized detection gallery of Task 4. Lastly, to run the demo, please refer to the live demo located at `milestone3/Live_Demo.ipynb`. This should be run from top to bottom, excluding the last cell. The second-to-last cell runs the app locally, and here you will be able to see the model identify faces, from the image of your choice, in real-time. Once you have finished using the app, please run the very last cell, to close it. 
+
+The weights of the model selected by the sweep are in `results/milestone3/sweep/best_model.pt`.
+
+---
+
+## Milestone 4: Integrated pipeline
+
+### The pipeline (`src/pipeline.py`)
+
+1. **Detect:** the Milestone 3 YOLOv8n (`best_model.pt`) finds the faces, one box per face (class-agnostic NMS).
+2. **Classify:** each box is cut out and named by the Milestone 1 EfficientNet-B0 (`CNN_2`), fine-tuned on face crops.
+3. **Combine:** both models name every face. The final name comes from the model chosen on the validation split;
+   faces where the two models disagree are marked.
+
+Run it on any image with `python -m src.pipeline --image <file or folder>`, or use the demo
+(`milestone4/Live_Demo.ipynb`).
+
+### Part A: Classifier on face crops
+
+The Milestone 1 classifier was trained on whole CelebA photos. On the faces the detector boxes in the synthetic
+scenes (pasted, rescaled, augmented) it is much less accurate, so `src/adapt_classifier.py` fine-tunes it on the
+face crops of the detection **training** split for 5 epochs, with the Milestone 1 settings (AdamW, backbone LR 1e-4,
+head LR 1e-3, label smoothing 0.1, same augmentation), keeping the best validation epoch.
+
+| Labelled face crops | Before | After |
+|---|---|---|
+| Validation (564 faces) | 65.6% | 96.1% |
+| Test (543 faces) | 61.1% | 86.4% |
+
+The largest remaining confusion is `id_7007` predicted as `id_4422`, the same look-alike error as the detector.
+
+### Part B: Settings chosen on the validation split
+
+Detector thresholds from 0.25 to 0.90 and both identity sources (detector or classifier) were scored with the
+Milestone 3 matching (same identity, IoU >= 0.5). Best F1: **detector confidence 0.70, final name from the detector**
+(F1 0.969, against 0.953 when the classifier names the faces). Saved in `results/milestone4/pipeline_settings.json`.
+
+### Part C: Test results
+
+Held-out test split, 200 images, 543 labelled faces.
+
+| System | Precision | Recall | F1 | Wrong-name boxes | Missed faces |
+|---|---|---|---|---|---|
+| Milestone 3 detector only (conf 0.80) | 0.965 | 0.919 | 0.942 | 16 | 28 |
+| **Pipeline, detector names faces (selected)** | 0.946 | 0.930 | 0.938 | 21 | 17 |
+| Pipeline, classifier names faces | 0.865 | 0.851 | 0.858 | 64 | 17 |
+
+| Test faces | Share | Final name correct |
+|---|---|---|
+| Both models agree | 88.2% | 97.8% |
+| Models disagree | 11.8% | 82.3% |
+
+- The detector names faces better than the separate classifier, so validation chose it. The pipeline keeps the
+  detector's F1 and finds more faces (17 missed instead of 28).
+- The classifier works as a second opinion: when both models agree the name is right 98% of the time, and the faces
+  where they disagree are flagged in the demo.
+
+Tables: `results/milestone4/` (`classifier_on_crops.csv`, `val_sweep.csv`, `test_results.csv`, `test_agreement.csv`).
+
+### Final results gallery
+
+[`results/milestone4/gallery/README.md`](results/milestone4/gallery/README.md), built by `Final_Gallery.ipynb`:
+24 correctly classified single faces, 8 misclassified single faces with a short analysis each, and 12 multi-face
+test images with the pipeline's boxes and names.
+
+### Live demo
+
+`milestone4/Live_Demo.ipynb` works like the Milestone 3 demo, with the integrated pipeline: pick a test image,
+upload or drag and drop an image, or take a webcam photo, and change the detector confidence with a slider. The
+table shows each face's final name, both models' answers and whether they agree. Run the last cell to stop the app.
+
+### Limitations
+
+- Four identities only, and a closed set: every detected face is given one of the four names, including people who
+  are none of them.
+- All detection data is synthetic (faces pasted on empty rooms). Real group photos have different lighting, poses,
+  occlusion and image statistics; performance on them is not measured.
+- Each identity has only 24-25 source photos (5 test photos each), so test faces are re-used across scenes and
+  small differences between systems are within noise.
 
 ---
 
