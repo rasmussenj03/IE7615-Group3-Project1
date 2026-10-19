@@ -1,0 +1,6 @@
+{
+  "det_conf": 0.7,
+  "nms_iou": 0.7,
+  "imgsz": 640,
+  "identity": "detector"
+}
